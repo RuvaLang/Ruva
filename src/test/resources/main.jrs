@@ -1,13 +1,22 @@
 package me.hydos.ruvaExample;
 
-public void main() {
+void main() {
         print!("Hello World! 2\n");
+        emptyMethod();
 
         u32 coolInt = 454354353;
-
         print!("The number {} is quite great, No?\n", coolInt);
 
         &str waterpickerString2 = String.from("This is so fucking cursed").as_str();
+        print!("{}", waterpickerString2);
+}
 
-        print!("This is so fucking cursed");
+u32 coolNumberSupplier(u32 offset, &str doesItReadTheReferenceRight, &u32 theseAreSomeStrangeTypes, u64 aNormalOneJustInCase) {
+    return offset + 42069;
+}
+
+/**
+ * Probably Tricked the parser, Didnt I?
+ */
+void emptyMethod() {
 }
