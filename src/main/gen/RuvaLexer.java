@@ -1,6 +1,6 @@
-// Generated from JustLexer.g4 by ANTLR 4.9.3
+// Generated from C:/Users/AllOsSuck/Projects/RuvaLang/Ruva/src/main/antlr\RuvaLexer.g4 by ANTLR 4.9.2
 
-package me.hydos.antlr;
+package me.hydos.ruva.antlr;
 
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
@@ -12,8 +12,8 @@ import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class JustLexer extends Lexer {
-	static { RuntimeMetaData.checkVersion("4.9.3", RuntimeMetaData.VERSION); }
+public class RuvaLexer extends Lexer {
+	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -147,13 +147,13 @@ public class JustLexer extends Lexer {
 	}
 
 
-	public JustLexer(CharStream input) {
+	public RuvaLexer(CharStream input) {
 		super(input);
 		_interp = new LexerATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
 	@Override
-	public String getGrammarFileName() { return "JustLexer.g4"; }
+	public String getGrammarFileName() { return "RuvaLexer.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }

@@ -1,6 +1,6 @@
-// Generated from JustParser.g4 by ANTLR 4.9.3
+// Generated from RuvaParser.g4 by ANTLR 4.9.3
 
- package me.hydos.antlr;
+ package me.hydos.ruva.antlr;
 
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -12,7 +12,7 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class JustParser extends Parser {
+public class RuvaParser extends Parser {
 	static { RuntimeMetaData.checkVersion("4.9.3", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -194,7 +194,7 @@ public class JustParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "JustParser.g4"; }
+	public String getGrammarFileName() { return "RuvaParser.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -205,7 +205,7 @@ public class JustParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public JustParser(TokenStream input) {
+	public RuvaParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
@@ -238,11 +238,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_compilationUnit; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterCompilationUnit(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterCompilationUnit(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitCompilationUnit(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitCompilationUnit(this);
 		}
 	}
 
@@ -322,11 +322,11 @@ public class JustParser extends Parser {
 	}
 
 	public static class PackageDeclarationContext extends ParserRuleContext {
-		public TerminalNode PACKAGE() { return getToken(JustParser.PACKAGE, 0); }
+		public TerminalNode PACKAGE() { return getToken(RuvaParser.PACKAGE, 0); }
 		public QualifiedNameContext qualifiedName() {
 			return getRuleContext(QualifiedNameContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
 		public List<AnnotationContext> annotation() {
 			return getRuleContexts(AnnotationContext.class);
 		}
@@ -339,11 +339,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_packageDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterPackageDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterPackageDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitPackageDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitPackageDeclaration(this);
 		}
 	}
 
@@ -388,25 +388,25 @@ public class JustParser extends Parser {
 	}
 
 	public static class ImportDeclarationContext extends ParserRuleContext {
-		public TerminalNode IMPORT() { return getToken(JustParser.IMPORT, 0); }
+		public TerminalNode IMPORT() { return getToken(RuvaParser.IMPORT, 0); }
 		public QualifiedNameContext qualifiedName() {
 			return getRuleContext(QualifiedNameContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
-		public TerminalNode STATIC() { return getToken(JustParser.STATIC, 0); }
-		public TerminalNode DOT() { return getToken(JustParser.DOT, 0); }
-		public TerminalNode MUL() { return getToken(JustParser.MUL, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
+		public TerminalNode STATIC() { return getToken(RuvaParser.STATIC, 0); }
+		public TerminalNode DOT() { return getToken(RuvaParser.DOT, 0); }
+		public TerminalNode MUL() { return getToken(RuvaParser.MUL, 0); }
 		public ImportDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_importDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterImportDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterImportDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitImportDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitImportDeclaration(this);
 		}
 	}
 
@@ -480,18 +480,18 @@ public class JustParser extends Parser {
 		public ClassOrInterfaceModifierContext classOrInterfaceModifier(int i) {
 			return getRuleContext(ClassOrInterfaceModifierContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
 		public TypeDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterTypeDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitTypeDeclaration(this);
 		}
 	}
 
@@ -612,21 +612,21 @@ public class JustParser extends Parser {
 		public ClassOrInterfaceModifierContext classOrInterfaceModifier() {
 			return getRuleContext(ClassOrInterfaceModifierContext.class,0);
 		}
-		public TerminalNode NATIVE() { return getToken(JustParser.NATIVE, 0); }
-		public TerminalNode SYNCHRONIZED() { return getToken(JustParser.SYNCHRONIZED, 0); }
-		public TerminalNode TRANSIENT() { return getToken(JustParser.TRANSIENT, 0); }
-		public TerminalNode VOLATILE() { return getToken(JustParser.VOLATILE, 0); }
+		public TerminalNode NATIVE() { return getToken(RuvaParser.NATIVE, 0); }
+		public TerminalNode SYNCHRONIZED() { return getToken(RuvaParser.SYNCHRONIZED, 0); }
+		public TerminalNode TRANSIENT() { return getToken(RuvaParser.TRANSIENT, 0); }
+		public TerminalNode VOLATILE() { return getToken(RuvaParser.VOLATILE, 0); }
 		public ModifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_modifier; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterModifier(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterModifier(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitModifier(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitModifier(this);
 		}
 	}
 
@@ -714,26 +714,26 @@ public class JustParser extends Parser {
 		public AnnotationContext annotation() {
 			return getRuleContext(AnnotationContext.class,0);
 		}
-		public TerminalNode PUBLIC() { return getToken(JustParser.PUBLIC, 0); }
-		public TerminalNode PROTECTED() { return getToken(JustParser.PROTECTED, 0); }
-		public TerminalNode PRIVATE() { return getToken(JustParser.PRIVATE, 0); }
-		public TerminalNode STATIC() { return getToken(JustParser.STATIC, 0); }
-		public TerminalNode ABSTRACT() { return getToken(JustParser.ABSTRACT, 0); }
-		public TerminalNode FINAL() { return getToken(JustParser.FINAL, 0); }
-		public TerminalNode STRICTFP() { return getToken(JustParser.STRICTFP, 0); }
-		public TerminalNode SEALED() { return getToken(JustParser.SEALED, 0); }
-		public TerminalNode NON_SEALED() { return getToken(JustParser.NON_SEALED, 0); }
+		public TerminalNode PUBLIC() { return getToken(RuvaParser.PUBLIC, 0); }
+		public TerminalNode PROTECTED() { return getToken(RuvaParser.PROTECTED, 0); }
+		public TerminalNode PRIVATE() { return getToken(RuvaParser.PRIVATE, 0); }
+		public TerminalNode STATIC() { return getToken(RuvaParser.STATIC, 0); }
+		public TerminalNode ABSTRACT() { return getToken(RuvaParser.ABSTRACT, 0); }
+		public TerminalNode FINAL() { return getToken(RuvaParser.FINAL, 0); }
+		public TerminalNode STRICTFP() { return getToken(RuvaParser.STRICTFP, 0); }
+		public TerminalNode SEALED() { return getToken(RuvaParser.SEALED, 0); }
+		public TerminalNode NON_SEALED() { return getToken(RuvaParser.NON_SEALED, 0); }
 		public ClassOrInterfaceModifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_classOrInterfaceModifier; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassOrInterfaceModifier(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterClassOrInterfaceModifier(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassOrInterfaceModifier(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitClassOrInterfaceModifier(this);
 		}
 	}
 
@@ -828,7 +828,7 @@ public class JustParser extends Parser {
 	}
 
 	public static class VariableModifierContext extends ParserRuleContext {
-		public TerminalNode FINAL() { return getToken(JustParser.FINAL, 0); }
+		public TerminalNode FINAL() { return getToken(RuvaParser.FINAL, 0); }
 		public AnnotationContext annotation() {
 			return getRuleContext(AnnotationContext.class,0);
 		}
@@ -838,11 +838,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_variableModifier; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterVariableModifier(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterVariableModifier(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitVariableModifier(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitVariableModifier(this);
 		}
 	}
 
@@ -898,7 +898,7 @@ public class JustParser extends Parser {
 	}
 
 	public static class ClassDeclarationContext extends ParserRuleContext {
-		public TerminalNode CLASS() { return getToken(JustParser.CLASS, 0); }
+		public TerminalNode CLASS() { return getToken(RuvaParser.CLASS, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -908,29 +908,29 @@ public class JustParser extends Parser {
 		public TypeParametersContext typeParameters() {
 			return getRuleContext(TypeParametersContext.class,0);
 		}
-		public TerminalNode EXTENDS() { return getToken(JustParser.EXTENDS, 0); }
+		public TerminalNode EXTENDS() { return getToken(RuvaParser.EXTENDS, 0); }
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
-		public TerminalNode IMPLEMENTS() { return getToken(JustParser.IMPLEMENTS, 0); }
+		public TerminalNode IMPLEMENTS() { return getToken(RuvaParser.IMPLEMENTS, 0); }
 		public List<TypeListContext> typeList() {
 			return getRuleContexts(TypeListContext.class);
 		}
 		public TypeListContext typeList(int i) {
 			return getRuleContext(TypeListContext.class,i);
 		}
-		public TerminalNode PERMITS() { return getToken(JustParser.PERMITS, 0); }
+		public TerminalNode PERMITS() { return getToken(RuvaParser.PERMITS, 0); }
 		public ClassDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_classDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterClassDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitClassDeclaration(this);
 		}
 	}
 
@@ -1007,17 +1007,17 @@ public class JustParser extends Parser {
 	}
 
 	public static class TypeParametersContext extends ParserRuleContext {
-		public TerminalNode LT() { return getToken(JustParser.LT, 0); }
+		public TerminalNode LT() { return getToken(RuvaParser.LT, 0); }
 		public List<TypeParameterContext> typeParameter() {
 			return getRuleContexts(TypeParameterContext.class);
 		}
 		public TypeParameterContext typeParameter(int i) {
 			return getRuleContext(TypeParameterContext.class,i);
 		}
-		public TerminalNode GT() { return getToken(JustParser.GT, 0); }
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public TerminalNode GT() { return getToken(RuvaParser.GT, 0); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public TypeParametersContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1025,11 +1025,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeParameters; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeParameters(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterTypeParameters(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeParameters(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitTypeParameters(this);
 		}
 	}
 
@@ -1085,7 +1085,7 @@ public class JustParser extends Parser {
 		public AnnotationContext annotation(int i) {
 			return getRuleContext(AnnotationContext.class,i);
 		}
-		public TerminalNode EXTENDS() { return getToken(JustParser.EXTENDS, 0); }
+		public TerminalNode EXTENDS() { return getToken(RuvaParser.EXTENDS, 0); }
 		public TypeBoundContext typeBound() {
 			return getRuleContext(TypeBoundContext.class,0);
 		}
@@ -1095,11 +1095,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeParameter; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeParameter(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterTypeParameter(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeParameter(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitTypeParameter(this);
 		}
 	}
 
@@ -1177,9 +1177,9 @@ public class JustParser extends Parser {
 		public TypeTypeContext typeType(int i) {
 			return getRuleContext(TypeTypeContext.class,i);
 		}
-		public List<TerminalNode> BITAND() { return getTokens(JustParser.BITAND); }
+		public List<TerminalNode> BITAND() { return getTokens(RuvaParser.BITAND); }
 		public TerminalNode BITAND(int i) {
-			return getToken(JustParser.BITAND, i);
+			return getToken(RuvaParser.BITAND, i);
 		}
 		public TypeBoundContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1187,11 +1187,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeBound; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeBound(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterTypeBound(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeBound(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitTypeBound(this);
 		}
 	}
 
@@ -1234,20 +1234,20 @@ public class JustParser extends Parser {
 	}
 
 	public static class EnumDeclarationContext extends ParserRuleContext {
-		public TerminalNode ENUM() { return getToken(JustParser.ENUM, 0); }
+		public TerminalNode ENUM() { return getToken(RuvaParser.ENUM, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
-		public TerminalNode IMPLEMENTS() { return getToken(JustParser.IMPLEMENTS, 0); }
+		public TerminalNode LBRACE() { return getToken(RuvaParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(RuvaParser.RBRACE, 0); }
+		public TerminalNode IMPLEMENTS() { return getToken(RuvaParser.IMPLEMENTS, 0); }
 		public TypeListContext typeList() {
 			return getRuleContext(TypeListContext.class,0);
 		}
 		public EnumConstantsContext enumConstants() {
 			return getRuleContext(EnumConstantsContext.class,0);
 		}
-		public TerminalNode COMMA() { return getToken(JustParser.COMMA, 0); }
+		public TerminalNode COMMA() { return getToken(RuvaParser.COMMA, 0); }
 		public EnumBodyDeclarationsContext enumBodyDeclarations() {
 			return getRuleContext(EnumBodyDeclarationsContext.class,0);
 		}
@@ -1257,11 +1257,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_enumDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterEnumDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterEnumDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitEnumDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitEnumDeclaration(this);
 		}
 	}
 
@@ -1342,9 +1342,9 @@ public class JustParser extends Parser {
 		public EnumConstantContext enumConstant(int i) {
 			return getRuleContext(EnumConstantContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public EnumConstantsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1352,11 +1352,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_enumConstants; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterEnumConstants(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterEnumConstants(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitEnumConstants(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitEnumConstants(this);
 		}
 	}
 
@@ -1422,11 +1422,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_enumConstant; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterEnumConstant(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterEnumConstant(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitEnumConstant(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitEnumConstant(this);
 		}
 	}
 
@@ -1490,7 +1490,7 @@ public class JustParser extends Parser {
 	}
 
 	public static class EnumBodyDeclarationsContext extends ParserRuleContext {
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
 		public List<ClassBodyDeclarationContext> classBodyDeclaration() {
 			return getRuleContexts(ClassBodyDeclarationContext.class);
 		}
@@ -1503,11 +1503,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_enumBodyDeclarations; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterEnumBodyDeclarations(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterEnumBodyDeclarations(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitEnumBodyDeclarations(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitEnumBodyDeclarations(this);
 		}
 	}
 
@@ -1548,7 +1548,7 @@ public class JustParser extends Parser {
 	}
 
 	public static class InterfaceDeclarationContext extends ParserRuleContext {
-		public TerminalNode INTERFACE() { return getToken(JustParser.INTERFACE, 0); }
+		public TerminalNode INTERFACE() { return getToken(RuvaParser.INTERFACE, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -1558,7 +1558,7 @@ public class JustParser extends Parser {
 		public TypeParametersContext typeParameters() {
 			return getRuleContext(TypeParametersContext.class,0);
 		}
-		public TerminalNode EXTENDS() { return getToken(JustParser.EXTENDS, 0); }
+		public TerminalNode EXTENDS() { return getToken(RuvaParser.EXTENDS, 0); }
 		public TypeListContext typeList() {
 			return getRuleContext(TypeListContext.class,0);
 		}
@@ -1568,11 +1568,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_interfaceDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterInterfaceDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitInterfaceDeclaration(this);
 		}
 	}
 
@@ -1625,8 +1625,8 @@ public class JustParser extends Parser {
 	}
 
 	public static class ClassBodyContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(RuvaParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(RuvaParser.RBRACE, 0); }
 		public List<ClassBodyDeclarationContext> classBodyDeclaration() {
 			return getRuleContexts(ClassBodyDeclarationContext.class);
 		}
@@ -1639,11 +1639,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_classBody; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassBody(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterClassBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassBody(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitClassBody(this);
 		}
 	}
 
@@ -1686,8 +1686,8 @@ public class JustParser extends Parser {
 	}
 
 	public static class InterfaceBodyContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(RuvaParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(RuvaParser.RBRACE, 0); }
 		public List<InterfaceBodyDeclarationContext> interfaceBodyDeclaration() {
 			return getRuleContexts(InterfaceBodyDeclarationContext.class);
 		}
@@ -1700,11 +1700,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_interfaceBody; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceBody(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterInterfaceBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceBody(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitInterfaceBody(this);
 		}
 	}
 
@@ -1747,11 +1747,11 @@ public class JustParser extends Parser {
 	}
 
 	public static class ClassBodyDeclarationContext extends ParserRuleContext {
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
-		public TerminalNode STATIC() { return getToken(JustParser.STATIC, 0); }
+		public TerminalNode STATIC() { return getToken(RuvaParser.STATIC, 0); }
 		public MemberDeclarationContext memberDeclaration() {
 			return getRuleContext(MemberDeclarationContext.class,0);
 		}
@@ -1767,11 +1767,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_classBodyDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassBodyDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterClassBodyDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassBodyDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitClassBodyDeclaration(this);
 		}
 	}
 
@@ -1881,11 +1881,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_memberDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterMemberDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterMemberDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitMemberDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitMemberDeclaration(this);
 		}
 	}
 
@@ -1992,15 +1992,15 @@ public class JustParser extends Parser {
 		public MethodBodyContext methodBody() {
 			return getRuleContext(MethodBodyContext.class,0);
 		}
-		public List<TerminalNode> LBRACK() { return getTokens(JustParser.LBRACK); }
+		public List<TerminalNode> LBRACK() { return getTokens(RuvaParser.LBRACK); }
 		public TerminalNode LBRACK(int i) {
-			return getToken(JustParser.LBRACK, i);
+			return getToken(RuvaParser.LBRACK, i);
 		}
-		public List<TerminalNode> RBRACK() { return getTokens(JustParser.RBRACK); }
+		public List<TerminalNode> RBRACK() { return getTokens(RuvaParser.RBRACK); }
 		public TerminalNode RBRACK(int i) {
-			return getToken(JustParser.RBRACK, i);
+			return getToken(RuvaParser.RBRACK, i);
 		}
-		public TerminalNode THROWS() { return getToken(JustParser.THROWS, 0); }
+		public TerminalNode THROWS() { return getToken(RuvaParser.THROWS, 0); }
 		public QualifiedNameListContext qualifiedNameList() {
 			return getRuleContext(QualifiedNameListContext.class,0);
 		}
@@ -2010,11 +2010,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_methodDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterMethodDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterMethodDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitMethodDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitMethodDeclaration(this);
 		}
 	}
 
@@ -2078,18 +2078,18 @@ public class JustParser extends Parser {
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
 		public MethodBodyContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_methodBody; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterMethodBody(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterMethodBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitMethodBody(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitMethodBody(this);
 		}
 	}
 
@@ -2133,18 +2133,18 @@ public class JustParser extends Parser {
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
-		public TerminalNode VOID() { return getToken(JustParser.VOID, 0); }
+		public TerminalNode VOID() { return getToken(RuvaParser.VOID, 0); }
 		public TypeTypeOrVoidContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeTypeOrVoid; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeTypeOrVoid(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterTypeTypeOrVoid(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeTypeOrVoid(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitTypeTypeOrVoid(this);
 		}
 	}
 
@@ -2221,11 +2221,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_genericMethodDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterGenericMethodDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterGenericMethodDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitGenericMethodDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitGenericMethodDeclaration(this);
 		}
 	}
 
@@ -2265,11 +2265,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_genericConstructorDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterGenericConstructorDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterGenericConstructorDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitGenericConstructorDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitGenericConstructorDeclaration(this);
 		}
 	}
 
@@ -2307,7 +2307,7 @@ public class JustParser extends Parser {
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
-		public TerminalNode THROWS() { return getToken(JustParser.THROWS, 0); }
+		public TerminalNode THROWS() { return getToken(RuvaParser.THROWS, 0); }
 		public QualifiedNameListContext qualifiedNameList() {
 			return getRuleContext(QualifiedNameListContext.class,0);
 		}
@@ -2317,11 +2317,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_constructorDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterConstructorDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterConstructorDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitConstructorDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitConstructorDeclaration(this);
 		}
 	}
 
@@ -2370,18 +2370,18 @@ public class JustParser extends Parser {
 		public VariableDeclaratorsContext variableDeclarators() {
 			return getRuleContext(VariableDeclaratorsContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
 		public FieldDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_fieldDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterFieldDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterFieldDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitFieldDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitFieldDeclaration(this);
 		}
 	}
 
@@ -2420,18 +2420,18 @@ public class JustParser extends Parser {
 		public ModifierContext modifier(int i) {
 			return getRuleContext(ModifierContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
 		public InterfaceBodyDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interfaceBodyDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceBodyDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterInterfaceBodyDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceBodyDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitInterfaceBodyDeclaration(this);
 		}
 	}
 
@@ -2561,11 +2561,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_interfaceMemberDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceMemberDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterInterfaceMemberDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceMemberDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitInterfaceMemberDeclaration(this);
 		}
 	}
 
@@ -2655,10 +2655,10 @@ public class JustParser extends Parser {
 		public ConstantDeclaratorContext constantDeclarator(int i) {
 			return getRuleContext(ConstantDeclaratorContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public ConstDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2666,11 +2666,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_constDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterConstDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterConstDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitConstDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitConstDeclaration(this);
 		}
 	}
 
@@ -2720,17 +2720,17 @@ public class JustParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode ASSIGN() { return getToken(JustParser.ASSIGN, 0); }
+		public TerminalNode ASSIGN() { return getToken(RuvaParser.ASSIGN, 0); }
 		public VariableInitializerContext variableInitializer() {
 			return getRuleContext(VariableInitializerContext.class,0);
 		}
-		public List<TerminalNode> LBRACK() { return getTokens(JustParser.LBRACK); }
+		public List<TerminalNode> LBRACK() { return getTokens(RuvaParser.LBRACK); }
 		public TerminalNode LBRACK(int i) {
-			return getToken(JustParser.LBRACK, i);
+			return getToken(RuvaParser.LBRACK, i);
 		}
-		public List<TerminalNode> RBRACK() { return getTokens(JustParser.RBRACK); }
+		public List<TerminalNode> RBRACK() { return getTokens(RuvaParser.RBRACK); }
 		public TerminalNode RBRACK(int i) {
-			return getToken(JustParser.RBRACK, i);
+			return getToken(RuvaParser.RBRACK, i);
 		}
 		public ConstantDeclaratorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2738,11 +2738,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_constantDeclarator; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterConstantDeclarator(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterConstantDeclarator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitConstantDeclarator(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitConstantDeclarator(this);
 		}
 	}
 
@@ -2804,11 +2804,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_interfaceMethodDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceMethodDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterInterfaceMethodDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceMethodDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitInterfaceMethodDeclaration(this);
 		}
 	}
 
@@ -2854,22 +2854,22 @@ public class JustParser extends Parser {
 		public AnnotationContext annotation() {
 			return getRuleContext(AnnotationContext.class,0);
 		}
-		public TerminalNode PUBLIC() { return getToken(JustParser.PUBLIC, 0); }
-		public TerminalNode ABSTRACT() { return getToken(JustParser.ABSTRACT, 0); }
-		public TerminalNode DEFAULT() { return getToken(JustParser.DEFAULT, 0); }
-		public TerminalNode STATIC() { return getToken(JustParser.STATIC, 0); }
-		public TerminalNode STRICTFP() { return getToken(JustParser.STRICTFP, 0); }
+		public TerminalNode PUBLIC() { return getToken(RuvaParser.PUBLIC, 0); }
+		public TerminalNode ABSTRACT() { return getToken(RuvaParser.ABSTRACT, 0); }
+		public TerminalNode DEFAULT() { return getToken(RuvaParser.DEFAULT, 0); }
+		public TerminalNode STATIC() { return getToken(RuvaParser.STATIC, 0); }
+		public TerminalNode STRICTFP() { return getToken(RuvaParser.STRICTFP, 0); }
 		public InterfaceMethodModifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interfaceMethodModifier; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceMethodModifier(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterInterfaceMethodModifier(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceMethodModifier(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitInterfaceMethodModifier(this);
 		}
 	}
 
@@ -2971,11 +2971,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_genericInterfaceMethodDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterGenericInterfaceMethodDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterGenericInterfaceMethodDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitGenericInterfaceMethodDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitGenericInterfaceMethodDeclaration(this);
 		}
 	}
 
@@ -3036,15 +3036,15 @@ public class JustParser extends Parser {
 		public AnnotationContext annotation(int i) {
 			return getRuleContext(AnnotationContext.class,i);
 		}
-		public List<TerminalNode> LBRACK() { return getTokens(JustParser.LBRACK); }
+		public List<TerminalNode> LBRACK() { return getTokens(RuvaParser.LBRACK); }
 		public TerminalNode LBRACK(int i) {
-			return getToken(JustParser.LBRACK, i);
+			return getToken(RuvaParser.LBRACK, i);
 		}
-		public List<TerminalNode> RBRACK() { return getTokens(JustParser.RBRACK); }
+		public List<TerminalNode> RBRACK() { return getTokens(RuvaParser.RBRACK); }
 		public TerminalNode RBRACK(int i) {
-			return getToken(JustParser.RBRACK, i);
+			return getToken(RuvaParser.RBRACK, i);
 		}
-		public TerminalNode THROWS() { return getToken(JustParser.THROWS, 0); }
+		public TerminalNode THROWS() { return getToken(RuvaParser.THROWS, 0); }
 		public QualifiedNameListContext qualifiedNameList() {
 			return getRuleContext(QualifiedNameListContext.class,0);
 		}
@@ -3054,11 +3054,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_interfaceCommonBodyDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInterfaceCommonBodyDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterInterfaceCommonBodyDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInterfaceCommonBodyDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitInterfaceCommonBodyDeclaration(this);
 		}
 	}
 
@@ -3142,9 +3142,9 @@ public class JustParser extends Parser {
 		public VariableDeclaratorContext variableDeclarator(int i) {
 			return getRuleContext(VariableDeclaratorContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public VariableDeclaratorsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3152,11 +3152,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_variableDeclarators; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterVariableDeclarators(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterVariableDeclarators(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitVariableDeclarators(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitVariableDeclarators(this);
 		}
 	}
 
@@ -3202,7 +3202,7 @@ public class JustParser extends Parser {
 		public VariableDeclaratorIdContext variableDeclaratorId() {
 			return getRuleContext(VariableDeclaratorIdContext.class,0);
 		}
-		public TerminalNode ASSIGN() { return getToken(JustParser.ASSIGN, 0); }
+		public TerminalNode ASSIGN() { return getToken(RuvaParser.ASSIGN, 0); }
 		public VariableInitializerContext variableInitializer() {
 			return getRuleContext(VariableInitializerContext.class,0);
 		}
@@ -3212,11 +3212,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_variableDeclarator; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterVariableDeclarator(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterVariableDeclarator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitVariableDeclarator(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitVariableDeclarator(this);
 		}
 	}
 
@@ -3258,13 +3258,13 @@ public class JustParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public List<TerminalNode> LBRACK() { return getTokens(JustParser.LBRACK); }
+		public List<TerminalNode> LBRACK() { return getTokens(RuvaParser.LBRACK); }
 		public TerminalNode LBRACK(int i) {
-			return getToken(JustParser.LBRACK, i);
+			return getToken(RuvaParser.LBRACK, i);
 		}
-		public List<TerminalNode> RBRACK() { return getTokens(JustParser.RBRACK); }
+		public List<TerminalNode> RBRACK() { return getTokens(RuvaParser.RBRACK); }
 		public TerminalNode RBRACK(int i) {
-			return getToken(JustParser.RBRACK, i);
+			return getToken(RuvaParser.RBRACK, i);
 		}
 		public VariableDeclaratorIdContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3272,11 +3272,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_variableDeclaratorId; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterVariableDeclaratorId(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterVariableDeclaratorId(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitVariableDeclaratorId(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitVariableDeclaratorId(this);
 		}
 	}
 
@@ -3331,11 +3331,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_variableInitializer; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterVariableInitializer(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterVariableInitializer(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitVariableInitializer(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitVariableInitializer(this);
 		}
 	}
 
@@ -3424,17 +3424,17 @@ public class JustParser extends Parser {
 	}
 
 	public static class ArrayInitializerContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(RuvaParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(RuvaParser.RBRACE, 0); }
 		public List<VariableInitializerContext> variableInitializer() {
 			return getRuleContexts(VariableInitializerContext.class);
 		}
 		public VariableInitializerContext variableInitializer(int i) {
 			return getRuleContext(VariableInitializerContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public ArrayInitializerContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3442,11 +3442,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_arrayInitializer; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterArrayInitializer(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterArrayInitializer(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitArrayInitializer(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitArrayInitializer(this);
 		}
 	}
 
@@ -3526,9 +3526,9 @@ public class JustParser extends Parser {
 		public TypeArgumentsContext typeArguments(int i) {
 			return getRuleContext(TypeArgumentsContext.class,i);
 		}
-		public List<TerminalNode> DOT() { return getTokens(JustParser.DOT); }
+		public List<TerminalNode> DOT() { return getTokens(RuvaParser.DOT); }
 		public TerminalNode DOT(int i) {
-			return getToken(JustParser.DOT, i);
+			return getToken(RuvaParser.DOT, i);
 		}
 		public ClassOrInterfaceTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3536,11 +3536,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_classOrInterfaceType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassOrInterfaceType(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterClassOrInterfaceType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassOrInterfaceType(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitClassOrInterfaceType(this);
 		}
 	}
 
@@ -3608,26 +3608,26 @@ public class JustParser extends Parser {
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
-		public TerminalNode QUESTION() { return getToken(JustParser.QUESTION, 0); }
+		public TerminalNode QUESTION() { return getToken(RuvaParser.QUESTION, 0); }
 		public List<AnnotationContext> annotation() {
 			return getRuleContexts(AnnotationContext.class);
 		}
 		public AnnotationContext annotation(int i) {
 			return getRuleContext(AnnotationContext.class,i);
 		}
-		public TerminalNode EXTENDS() { return getToken(JustParser.EXTENDS, 0); }
-		public TerminalNode SUPER() { return getToken(JustParser.SUPER, 0); }
+		public TerminalNode EXTENDS() { return getToken(RuvaParser.EXTENDS, 0); }
+		public TerminalNode SUPER() { return getToken(RuvaParser.SUPER, 0); }
 		public TypeArgumentContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_typeArgument; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeArgument(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterTypeArgument(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeArgument(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitTypeArgument(this);
 		}
 	}
 
@@ -3707,9 +3707,9 @@ public class JustParser extends Parser {
 		public QualifiedNameContext qualifiedName(int i) {
 			return getRuleContext(QualifiedNameContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public QualifiedNameListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3717,11 +3717,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_qualifiedNameList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterQualifiedNameList(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterQualifiedNameList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitQualifiedNameList(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitQualifiedNameList(this);
 		}
 	}
 
@@ -3764,12 +3764,12 @@ public class JustParser extends Parser {
 	}
 
 	public static class FormalParametersContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
 		public ReceiverParameterContext receiverParameter() {
 			return getRuleContext(ReceiverParameterContext.class,0);
 		}
-		public TerminalNode COMMA() { return getToken(JustParser.COMMA, 0); }
+		public TerminalNode COMMA() { return getToken(RuvaParser.COMMA, 0); }
 		public FormalParameterListContext formalParameterList() {
 			return getRuleContext(FormalParameterListContext.class,0);
 		}
@@ -3779,11 +3779,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_formalParameters; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterFormalParameters(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterFormalParameters(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitFormalParameters(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitFormalParameters(this);
 		}
 	}
 
@@ -3865,16 +3865,16 @@ public class JustParser extends Parser {
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
-		public TerminalNode THIS() { return getToken(JustParser.THIS, 0); }
+		public TerminalNode THIS() { return getToken(RuvaParser.THIS, 0); }
 		public List<IdentifierContext> identifier() {
 			return getRuleContexts(IdentifierContext.class);
 		}
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public List<TerminalNode> DOT() { return getTokens(JustParser.DOT); }
+		public List<TerminalNode> DOT() { return getTokens(RuvaParser.DOT); }
 		public TerminalNode DOT(int i) {
-			return getToken(JustParser.DOT, i);
+			return getToken(RuvaParser.DOT, i);
 		}
 		public ReceiverParameterContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3882,11 +3882,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_receiverParameter; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterReceiverParameter(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterReceiverParameter(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitReceiverParameter(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitReceiverParameter(this);
 		}
 	}
 
@@ -3937,9 +3937,9 @@ public class JustParser extends Parser {
 		public FormalParameterContext formalParameter(int i) {
 			return getRuleContext(FormalParameterContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public LastFormalParameterContext lastFormalParameter() {
 			return getRuleContext(LastFormalParameterContext.class,0);
@@ -3950,11 +3950,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_formalParameterList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterFormalParameterList(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterFormalParameterList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitFormalParameterList(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitFormalParameterList(this);
 		}
 	}
 
@@ -4043,11 +4043,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_formalParameter; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterFormalParameter(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterFormalParameter(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitFormalParameter(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitFormalParameter(this);
 		}
 	}
 
@@ -4095,7 +4095,7 @@ public class JustParser extends Parser {
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
-		public TerminalNode ELLIPSIS() { return getToken(JustParser.ELLIPSIS, 0); }
+		public TerminalNode ELLIPSIS() { return getToken(RuvaParser.ELLIPSIS, 0); }
 		public VariableDeclaratorIdContext variableDeclaratorId() {
 			return getRuleContext(VariableDeclaratorIdContext.class,0);
 		}
@@ -4117,11 +4117,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_lastFormalParameter; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLastFormalParameter(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterLastFormalParameter(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLastFormalParameter(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitLastFormalParameter(this);
 		}
 	}
 
@@ -4189,9 +4189,9 @@ public class JustParser extends Parser {
 		public LambdaLVTIParameterContext lambdaLVTIParameter(int i) {
 			return getRuleContext(LambdaLVTIParameterContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public LambdaLVTIListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4199,11 +4199,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_lambdaLVTIList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLambdaLVTIList(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterLambdaLVTIList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLambdaLVTIList(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitLambdaLVTIList(this);
 		}
 	}
 
@@ -4246,7 +4246,7 @@ public class JustParser extends Parser {
 	}
 
 	public static class LambdaLVTIParameterContext extends ParserRuleContext {
-		public TerminalNode VAR() { return getToken(JustParser.VAR, 0); }
+		public TerminalNode VAR() { return getToken(RuvaParser.VAR, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -4262,11 +4262,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_lambdaLVTIParameter; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLambdaLVTIParameter(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterLambdaLVTIParameter(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLambdaLVTIParameter(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitLambdaLVTIParameter(this);
 		}
 	}
 
@@ -4317,9 +4317,9 @@ public class JustParser extends Parser {
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public List<TerminalNode> DOT() { return getTokens(JustParser.DOT); }
+		public List<TerminalNode> DOT() { return getTokens(RuvaParser.DOT); }
 		public TerminalNode DOT(int i) {
-			return getToken(JustParser.DOT, i);
+			return getToken(RuvaParser.DOT, i);
 		}
 		public QualifiedNameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4327,11 +4327,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_qualifiedName; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterQualifiedName(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterQualifiedName(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitQualifiedName(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitQualifiedName(this);
 		}
 	}
 
@@ -4382,22 +4382,22 @@ public class JustParser extends Parser {
 		public FloatLiteralContext floatLiteral() {
 			return getRuleContext(FloatLiteralContext.class,0);
 		}
-		public TerminalNode CHAR_LITERAL() { return getToken(JustParser.CHAR_LITERAL, 0); }
-		public TerminalNode STRING_LITERAL() { return getToken(JustParser.STRING_LITERAL, 0); }
-		public TerminalNode BOOL_LITERAL() { return getToken(JustParser.BOOL_LITERAL, 0); }
-		public TerminalNode NULL_LITERAL() { return getToken(JustParser.NULL_LITERAL, 0); }
-		public TerminalNode TEXT_BLOCK() { return getToken(JustParser.TEXT_BLOCK, 0); }
+		public TerminalNode CHAR_LITERAL() { return getToken(RuvaParser.CHAR_LITERAL, 0); }
+		public TerminalNode STRING_LITERAL() { return getToken(RuvaParser.STRING_LITERAL, 0); }
+		public TerminalNode BOOL_LITERAL() { return getToken(RuvaParser.BOOL_LITERAL, 0); }
+		public TerminalNode NULL_LITERAL() { return getToken(RuvaParser.NULL_LITERAL, 0); }
+		public TerminalNode TEXT_BLOCK() { return getToken(RuvaParser.TEXT_BLOCK, 0); }
 		public LiteralContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_literal; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLiteral(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterLiteral(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLiteral(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitLiteral(this);
 		}
 	}
 
@@ -4477,21 +4477,21 @@ public class JustParser extends Parser {
 	}
 
 	public static class IntegerLiteralContext extends ParserRuleContext {
-		public TerminalNode DECIMAL_LITERAL() { return getToken(JustParser.DECIMAL_LITERAL, 0); }
-		public TerminalNode HEX_LITERAL() { return getToken(JustParser.HEX_LITERAL, 0); }
-		public TerminalNode OCT_LITERAL() { return getToken(JustParser.OCT_LITERAL, 0); }
-		public TerminalNode BINARY_LITERAL() { return getToken(JustParser.BINARY_LITERAL, 0); }
+		public TerminalNode DECIMAL_LITERAL() { return getToken(RuvaParser.DECIMAL_LITERAL, 0); }
+		public TerminalNode HEX_LITERAL() { return getToken(RuvaParser.HEX_LITERAL, 0); }
+		public TerminalNode OCT_LITERAL() { return getToken(RuvaParser.OCT_LITERAL, 0); }
+		public TerminalNode BINARY_LITERAL() { return getToken(RuvaParser.BINARY_LITERAL, 0); }
 		public IntegerLiteralContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_integerLiteral; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterIntegerLiteral(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterIntegerLiteral(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitIntegerLiteral(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitIntegerLiteral(this);
 		}
 	}
 
@@ -4526,19 +4526,19 @@ public class JustParser extends Parser {
 	}
 
 	public static class FloatLiteralContext extends ParserRuleContext {
-		public TerminalNode FLOAT_LITERAL() { return getToken(JustParser.FLOAT_LITERAL, 0); }
-		public TerminalNode HEX_FLOAT_LITERAL() { return getToken(JustParser.HEX_FLOAT_LITERAL, 0); }
+		public TerminalNode FLOAT_LITERAL() { return getToken(RuvaParser.FLOAT_LITERAL, 0); }
+		public TerminalNode HEX_FLOAT_LITERAL() { return getToken(RuvaParser.HEX_FLOAT_LITERAL, 0); }
 		public FloatLiteralContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_floatLiteral; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterFloatLiteral(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterFloatLiteral(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitFloatLiteral(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitFloatLiteral(this);
 		}
 	}
 
@@ -4573,16 +4573,16 @@ public class JustParser extends Parser {
 	}
 
 	public static class AltAnnotationQualifiedNameContext extends ParserRuleContext {
-		public TerminalNode AT() { return getToken(JustParser.AT, 0); }
+		public TerminalNode AT() { return getToken(RuvaParser.AT, 0); }
 		public List<IdentifierContext> identifier() {
 			return getRuleContexts(IdentifierContext.class);
 		}
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public List<TerminalNode> DOT() { return getTokens(JustParser.DOT); }
+		public List<TerminalNode> DOT() { return getTokens(RuvaParser.DOT); }
 		public TerminalNode DOT(int i) {
-			return getToken(JustParser.DOT, i);
+			return getToken(RuvaParser.DOT, i);
 		}
 		public AltAnnotationQualifiedNameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4590,11 +4590,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_altAnnotationQualifiedName; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAltAnnotationQualifiedName(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterAltAnnotationQualifiedName(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAltAnnotationQualifiedName(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitAltAnnotationQualifiedName(this);
 		}
 	}
 
@@ -4639,15 +4639,15 @@ public class JustParser extends Parser {
 	}
 
 	public static class AnnotationContext extends ParserRuleContext {
-		public TerminalNode AT() { return getToken(JustParser.AT, 0); }
+		public TerminalNode AT() { return getToken(RuvaParser.AT, 0); }
 		public QualifiedNameContext qualifiedName() {
 			return getRuleContext(QualifiedNameContext.class,0);
 		}
 		public AltAnnotationQualifiedNameContext altAnnotationQualifiedName() {
 			return getRuleContext(AltAnnotationQualifiedNameContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
 		public ElementValuePairsContext elementValuePairs() {
 			return getRuleContext(ElementValuePairsContext.class,0);
 		}
@@ -4660,11 +4660,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotation; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotation(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterAnnotation(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotation(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitAnnotation(this);
 		}
 	}
 
@@ -4741,9 +4741,9 @@ public class JustParser extends Parser {
 		public ElementValuePairContext elementValuePair(int i) {
 			return getRuleContext(ElementValuePairContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public ElementValuePairsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4751,11 +4751,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_elementValuePairs; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterElementValuePairs(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterElementValuePairs(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitElementValuePairs(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitElementValuePairs(this);
 		}
 	}
 
@@ -4801,7 +4801,7 @@ public class JustParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode ASSIGN() { return getToken(JustParser.ASSIGN, 0); }
+		public TerminalNode ASSIGN() { return getToken(RuvaParser.ASSIGN, 0); }
 		public ElementValueContext elementValue() {
 			return getRuleContext(ElementValueContext.class,0);
 		}
@@ -4811,11 +4811,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_elementValuePair; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterElementValuePair(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterElementValuePair(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitElementValuePair(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitElementValuePair(this);
 		}
 	}
 
@@ -4860,11 +4860,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_elementValue; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterElementValue(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterElementValue(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitElementValue(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitElementValue(this);
 		}
 	}
 
@@ -4910,17 +4910,17 @@ public class JustParser extends Parser {
 	}
 
 	public static class ElementValueArrayInitializerContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(RuvaParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(RuvaParser.RBRACE, 0); }
 		public List<ElementValueContext> elementValue() {
 			return getRuleContexts(ElementValueContext.class);
 		}
 		public ElementValueContext elementValue(int i) {
 			return getRuleContext(ElementValueContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public ElementValueArrayInitializerContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4928,11 +4928,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_elementValueArrayInitializer; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterElementValueArrayInitializer(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterElementValueArrayInitializer(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitElementValueArrayInitializer(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitElementValueArrayInitializer(this);
 		}
 	}
 
@@ -5000,8 +5000,8 @@ public class JustParser extends Parser {
 	}
 
 	public static class AnnotationTypeDeclarationContext extends ParserRuleContext {
-		public TerminalNode AT() { return getToken(JustParser.AT, 0); }
-		public TerminalNode INTERFACE() { return getToken(JustParser.INTERFACE, 0); }
+		public TerminalNode AT() { return getToken(RuvaParser.AT, 0); }
+		public TerminalNode INTERFACE() { return getToken(RuvaParser.INTERFACE, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -5014,11 +5014,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotationTypeDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationTypeDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterAnnotationTypeDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationTypeDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitAnnotationTypeDeclaration(this);
 		}
 	}
 
@@ -5050,8 +5050,8 @@ public class JustParser extends Parser {
 	}
 
 	public static class AnnotationTypeBodyContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(RuvaParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(RuvaParser.RBRACE, 0); }
 		public List<AnnotationTypeElementDeclarationContext> annotationTypeElementDeclaration() {
 			return getRuleContexts(AnnotationTypeElementDeclarationContext.class);
 		}
@@ -5064,11 +5064,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotationTypeBody; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationTypeBody(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterAnnotationTypeBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationTypeBody(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitAnnotationTypeBody(this);
 		}
 	}
 
@@ -5120,18 +5120,18 @@ public class JustParser extends Parser {
 		public ModifierContext modifier(int i) {
 			return getRuleContext(ModifierContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
 		public AnnotationTypeElementDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_annotationTypeElementDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationTypeElementDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterAnnotationTypeElementDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationTypeElementDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitAnnotationTypeElementDeclaration(this);
 		}
 	}
 
@@ -5234,7 +5234,7 @@ public class JustParser extends Parser {
 		public AnnotationMethodOrConstantRestContext annotationMethodOrConstantRest() {
 			return getRuleContext(AnnotationMethodOrConstantRestContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
 		public ClassDeclarationContext classDeclaration() {
 			return getRuleContext(ClassDeclarationContext.class,0);
 		}
@@ -5256,11 +5256,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotationTypeElementRest; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationTypeElementRest(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterAnnotationTypeElementRest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationTypeElementRest(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitAnnotationTypeElementRest(this);
 		}
 	}
 
@@ -5393,11 +5393,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotationMethodOrConstantRest; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationMethodOrConstantRest(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterAnnotationMethodOrConstantRest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationMethodOrConstantRest(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitAnnotationMethodOrConstantRest(this);
 		}
 	}
 
@@ -5439,8 +5439,8 @@ public class JustParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
 		public DefaultValueContext defaultValue() {
 			return getRuleContext(DefaultValueContext.class,0);
 		}
@@ -5450,11 +5450,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotationMethodRest; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationMethodRest(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterAnnotationMethodRest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationMethodRest(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitAnnotationMethodRest(this);
 		}
 	}
 
@@ -5504,11 +5504,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_annotationConstantRest; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterAnnotationConstantRest(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterAnnotationConstantRest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitAnnotationConstantRest(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitAnnotationConstantRest(this);
 		}
 	}
 
@@ -5534,7 +5534,7 @@ public class JustParser extends Parser {
 	}
 
 	public static class DefaultValueContext extends ParserRuleContext {
-		public TerminalNode DEFAULT() { return getToken(JustParser.DEFAULT, 0); }
+		public TerminalNode DEFAULT() { return getToken(RuvaParser.DEFAULT, 0); }
 		public ElementValueContext elementValue() {
 			return getRuleContext(ElementValueContext.class,0);
 		}
@@ -5544,11 +5544,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_defaultValue; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterDefaultValue(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterDefaultValue(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitDefaultValue(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitDefaultValue(this);
 		}
 	}
 
@@ -5576,7 +5576,7 @@ public class JustParser extends Parser {
 	}
 
 	public static class RecordDeclarationContext extends ParserRuleContext {
-		public TerminalNode RECORD() { return getToken(JustParser.RECORD, 0); }
+		public TerminalNode RECORD() { return getToken(RuvaParser.RECORD, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -5589,7 +5589,7 @@ public class JustParser extends Parser {
 		public TypeParametersContext typeParameters() {
 			return getRuleContext(TypeParametersContext.class,0);
 		}
-		public TerminalNode IMPLEMENTS() { return getToken(JustParser.IMPLEMENTS, 0); }
+		public TerminalNode IMPLEMENTS() { return getToken(RuvaParser.IMPLEMENTS, 0); }
 		public TypeListContext typeList() {
 			return getRuleContext(TypeListContext.class,0);
 		}
@@ -5599,11 +5599,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_recordDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterRecordDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterRecordDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitRecordDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitRecordDeclaration(this);
 		}
 	}
 
@@ -5658,8 +5658,8 @@ public class JustParser extends Parser {
 	}
 
 	public static class RecordHeaderContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
 		public RecordComponentListContext recordComponentList() {
 			return getRuleContext(RecordComponentListContext.class,0);
 		}
@@ -5669,11 +5669,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_recordHeader; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterRecordHeader(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterRecordHeader(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitRecordHeader(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitRecordHeader(this);
 		}
 	}
 
@@ -5718,9 +5718,9 @@ public class JustParser extends Parser {
 		public RecordComponentContext recordComponent(int i) {
 			return getRuleContext(RecordComponentContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public RecordComponentListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5728,11 +5728,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_recordComponentList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterRecordComponentList(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterRecordComponentList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitRecordComponentList(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitRecordComponentList(this);
 		}
 	}
 
@@ -5787,11 +5787,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_recordComponent; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterRecordComponent(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterRecordComponent(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitRecordComponent(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitRecordComponent(this);
 		}
 	}
 
@@ -5819,8 +5819,8 @@ public class JustParser extends Parser {
 	}
 
 	public static class RecordBodyContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(RuvaParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(RuvaParser.RBRACE, 0); }
 		public List<ClassBodyDeclarationContext> classBodyDeclaration() {
 			return getRuleContexts(ClassBodyDeclarationContext.class);
 		}
@@ -5833,11 +5833,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_recordBody; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterRecordBody(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterRecordBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitRecordBody(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitRecordBody(this);
 		}
 	}
 
@@ -5880,8 +5880,8 @@ public class JustParser extends Parser {
 	}
 
 	public static class BlockContext extends ParserRuleContext {
-		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(RuvaParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(RuvaParser.RBRACE, 0); }
 		public List<BlockStatementContext> blockStatement() {
 			return getRuleContexts(BlockStatementContext.class);
 		}
@@ -5894,11 +5894,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_block; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterBlock(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterBlock(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitBlock(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitBlock(this);
 		}
 	}
 
@@ -5944,7 +5944,7 @@ public class JustParser extends Parser {
 		public LocalVariableDeclarationContext localVariableDeclaration() {
 			return getRuleContext(LocalVariableDeclarationContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
 		public StatementContext statement() {
 			return getRuleContext(StatementContext.class,0);
 		}
@@ -5957,11 +5957,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_blockStatement; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterBlockStatement(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterBlockStatement(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitBlockStatement(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitBlockStatement(this);
 		}
 	}
 
@@ -6015,11 +6015,11 @@ public class JustParser extends Parser {
 		public VariableDeclaratorsContext variableDeclarators() {
 			return getRuleContext(VariableDeclaratorsContext.class,0);
 		}
-		public TerminalNode VAR() { return getToken(JustParser.VAR, 0); }
+		public TerminalNode VAR() { return getToken(RuvaParser.VAR, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode ASSIGN() { return getToken(JustParser.ASSIGN, 0); }
+		public TerminalNode ASSIGN() { return getToken(RuvaParser.ASSIGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -6035,11 +6035,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_localVariableDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLocalVariableDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterLocalVariableDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLocalVariableDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitLocalVariableDeclaration(this);
 		}
 	}
 
@@ -6104,32 +6104,32 @@ public class JustParser extends Parser {
 	}
 
 	public static class IdentifierContext extends ParserRuleContext {
-		public TerminalNode IDENTIFIER() { return getToken(JustParser.IDENTIFIER, 0); }
-		public TerminalNode OPEN() { return getToken(JustParser.OPEN, 0); }
-		public TerminalNode REQUIRES() { return getToken(JustParser.REQUIRES, 0); }
-		public TerminalNode EXPORTS() { return getToken(JustParser.EXPORTS, 0); }
-		public TerminalNode OPENS() { return getToken(JustParser.OPENS, 0); }
-		public TerminalNode TO() { return getToken(JustParser.TO, 0); }
-		public TerminalNode USES() { return getToken(JustParser.USES, 0); }
-		public TerminalNode PROVIDES() { return getToken(JustParser.PROVIDES, 0); }
-		public TerminalNode WITH() { return getToken(JustParser.WITH, 0); }
-		public TerminalNode TRANSITIVE() { return getToken(JustParser.TRANSITIVE, 0); }
-		public TerminalNode YIELD() { return getToken(JustParser.YIELD, 0); }
-		public TerminalNode SEALED() { return getToken(JustParser.SEALED, 0); }
-		public TerminalNode PERMITS() { return getToken(JustParser.PERMITS, 0); }
-		public TerminalNode RECORD() { return getToken(JustParser.RECORD, 0); }
-		public TerminalNode VAR() { return getToken(JustParser.VAR, 0); }
+		public TerminalNode IDENTIFIER() { return getToken(RuvaParser.IDENTIFIER, 0); }
+		public TerminalNode OPEN() { return getToken(RuvaParser.OPEN, 0); }
+		public TerminalNode REQUIRES() { return getToken(RuvaParser.REQUIRES, 0); }
+		public TerminalNode EXPORTS() { return getToken(RuvaParser.EXPORTS, 0); }
+		public TerminalNode OPENS() { return getToken(RuvaParser.OPENS, 0); }
+		public TerminalNode TO() { return getToken(RuvaParser.TO, 0); }
+		public TerminalNode USES() { return getToken(RuvaParser.USES, 0); }
+		public TerminalNode PROVIDES() { return getToken(RuvaParser.PROVIDES, 0); }
+		public TerminalNode WITH() { return getToken(RuvaParser.WITH, 0); }
+		public TerminalNode TRANSITIVE() { return getToken(RuvaParser.TRANSITIVE, 0); }
+		public TerminalNode YIELD() { return getToken(RuvaParser.YIELD, 0); }
+		public TerminalNode SEALED() { return getToken(RuvaParser.SEALED, 0); }
+		public TerminalNode PERMITS() { return getToken(RuvaParser.PERMITS, 0); }
+		public TerminalNode RECORD() { return getToken(RuvaParser.RECORD, 0); }
+		public TerminalNode VAR() { return getToken(RuvaParser.VAR, 0); }
 		public IdentifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_identifier; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterIdentifier(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterIdentifier(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitIdentifier(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitIdentifier(this);
 		}
 	}
 
@@ -6179,18 +6179,18 @@ public class JustParser extends Parser {
 		public ClassOrInterfaceModifierContext classOrInterfaceModifier(int i) {
 			return getRuleContext(ClassOrInterfaceModifierContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
 		public LocalTypeDeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_localTypeDeclaration; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLocalTypeDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterLocalTypeDeclaration(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLocalTypeDeclaration(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitLocalTypeDeclaration(this);
 		}
 	}
 
@@ -6301,16 +6301,16 @@ public class JustParser extends Parser {
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
-		public TerminalNode ASSERT() { return getToken(JustParser.ASSERT, 0); }
+		public TerminalNode ASSERT() { return getToken(RuvaParser.ASSERT, 0); }
 		public List<ExpressionContext> expression() {
 			return getRuleContexts(ExpressionContext.class);
 		}
 		public ExpressionContext expression(int i) {
 			return getRuleContext(ExpressionContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
-		public TerminalNode COLON() { return getToken(JustParser.COLON, 0); }
-		public TerminalNode IF() { return getToken(JustParser.IF, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
+		public TerminalNode COLON() { return getToken(RuvaParser.COLON, 0); }
+		public TerminalNode IF() { return getToken(RuvaParser.IF, 0); }
 		public ParExpressionContext parExpression() {
 			return getRuleContext(ParExpressionContext.class,0);
 		}
@@ -6320,16 +6320,16 @@ public class JustParser extends Parser {
 		public StatementContext statement(int i) {
 			return getRuleContext(StatementContext.class,i);
 		}
-		public TerminalNode ELSE() { return getToken(JustParser.ELSE, 0); }
-		public TerminalNode FOR() { return getToken(JustParser.FOR, 0); }
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode ELSE() { return getToken(RuvaParser.ELSE, 0); }
+		public TerminalNode FOR() { return getToken(RuvaParser.FOR, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
 		public ForControlContext forControl() {
 			return getRuleContext(ForControlContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
-		public TerminalNode WHILE() { return getToken(JustParser.WHILE, 0); }
-		public TerminalNode DO() { return getToken(JustParser.DO, 0); }
-		public TerminalNode TRY() { return getToken(JustParser.TRY, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
+		public TerminalNode WHILE() { return getToken(RuvaParser.WHILE, 0); }
+		public TerminalNode DO() { return getToken(RuvaParser.DO, 0); }
+		public TerminalNode TRY() { return getToken(RuvaParser.TRY, 0); }
 		public FinallyBlockContext finallyBlock() {
 			return getRuleContext(FinallyBlockContext.class,0);
 		}
@@ -6342,9 +6342,9 @@ public class JustParser extends Parser {
 		public ResourceSpecificationContext resourceSpecification() {
 			return getRuleContext(ResourceSpecificationContext.class,0);
 		}
-		public TerminalNode SWITCH() { return getToken(JustParser.SWITCH, 0); }
-		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
+		public TerminalNode SWITCH() { return getToken(RuvaParser.SWITCH, 0); }
+		public TerminalNode LBRACE() { return getToken(RuvaParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(RuvaParser.RBRACE, 0); }
 		public List<SwitchBlockStatementGroupContext> switchBlockStatementGroup() {
 			return getRuleContexts(SwitchBlockStatementGroupContext.class);
 		}
@@ -6357,15 +6357,15 @@ public class JustParser extends Parser {
 		public SwitchLabelContext switchLabel(int i) {
 			return getRuleContext(SwitchLabelContext.class,i);
 		}
-		public TerminalNode SYNCHRONIZED() { return getToken(JustParser.SYNCHRONIZED, 0); }
-		public TerminalNode RETURN() { return getToken(JustParser.RETURN, 0); }
-		public TerminalNode THROW() { return getToken(JustParser.THROW, 0); }
-		public TerminalNode BREAK() { return getToken(JustParser.BREAK, 0); }
+		public TerminalNode SYNCHRONIZED() { return getToken(RuvaParser.SYNCHRONIZED, 0); }
+		public TerminalNode RETURN() { return getToken(RuvaParser.RETURN, 0); }
+		public TerminalNode THROW() { return getToken(RuvaParser.THROW, 0); }
+		public TerminalNode BREAK() { return getToken(RuvaParser.BREAK, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode CONTINUE() { return getToken(JustParser.CONTINUE, 0); }
-		public TerminalNode YIELD() { return getToken(JustParser.YIELD, 0); }
+		public TerminalNode CONTINUE() { return getToken(RuvaParser.CONTINUE, 0); }
+		public TerminalNode YIELD() { return getToken(RuvaParser.YIELD, 0); }
 		public SwitchExpressionContext switchExpression() {
 			return getRuleContext(SwitchExpressionContext.class,0);
 		}
@@ -6375,11 +6375,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_statement; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterStatement(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterStatement(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitStatement(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitStatement(this);
 		}
 	}
 
@@ -6761,15 +6761,15 @@ public class JustParser extends Parser {
 	}
 
 	public static class CatchClauseContext extends ParserRuleContext {
-		public TerminalNode CATCH() { return getToken(JustParser.CATCH, 0); }
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode CATCH() { return getToken(RuvaParser.CATCH, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
 		public CatchTypeContext catchType() {
 			return getRuleContext(CatchTypeContext.class,0);
 		}
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
@@ -6785,11 +6785,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_catchClause; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterCatchClause(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterCatchClause(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitCatchClause(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitCatchClause(this);
 		}
 	}
 
@@ -6848,9 +6848,9 @@ public class JustParser extends Parser {
 		public QualifiedNameContext qualifiedName(int i) {
 			return getRuleContext(QualifiedNameContext.class,i);
 		}
-		public List<TerminalNode> BITOR() { return getTokens(JustParser.BITOR); }
+		public List<TerminalNode> BITOR() { return getTokens(RuvaParser.BITOR); }
 		public TerminalNode BITOR(int i) {
-			return getToken(JustParser.BITOR, i);
+			return getToken(RuvaParser.BITOR, i);
 		}
 		public CatchTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6858,11 +6858,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_catchType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterCatchType(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterCatchType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitCatchType(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitCatchType(this);
 		}
 	}
 
@@ -6905,7 +6905,7 @@ public class JustParser extends Parser {
 	}
 
 	public static class FinallyBlockContext extends ParserRuleContext {
-		public TerminalNode FINALLY() { return getToken(JustParser.FINALLY, 0); }
+		public TerminalNode FINALLY() { return getToken(RuvaParser.FINALLY, 0); }
 		public BlockContext block() {
 			return getRuleContext(BlockContext.class,0);
 		}
@@ -6915,11 +6915,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_finallyBlock; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterFinallyBlock(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterFinallyBlock(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitFinallyBlock(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitFinallyBlock(this);
 		}
 	}
 
@@ -6947,23 +6947,23 @@ public class JustParser extends Parser {
 	}
 
 	public static class ResourceSpecificationContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
 		public ResourcesContext resources() {
 			return getRuleContext(ResourcesContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
-		public TerminalNode SEMI() { return getToken(JustParser.SEMI, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
+		public TerminalNode SEMI() { return getToken(RuvaParser.SEMI, 0); }
 		public ResourceSpecificationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_resourceSpecification; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterResourceSpecification(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterResourceSpecification(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitResourceSpecification(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitResourceSpecification(this);
 		}
 	}
 
@@ -7010,9 +7010,9 @@ public class JustParser extends Parser {
 		public ResourceContext resource(int i) {
 			return getRuleContext(ResourceContext.class,i);
 		}
-		public List<TerminalNode> SEMI() { return getTokens(JustParser.SEMI); }
+		public List<TerminalNode> SEMI() { return getTokens(RuvaParser.SEMI); }
 		public TerminalNode SEMI(int i) {
-			return getToken(JustParser.SEMI, i);
+			return getToken(RuvaParser.SEMI, i);
 		}
 		public ResourcesContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -7020,11 +7020,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_resources; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterResources(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterResources(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitResources(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitResources(this);
 		}
 	}
 
@@ -7069,7 +7069,7 @@ public class JustParser extends Parser {
 	}
 
 	public static class ResourceContext extends ParserRuleContext {
-		public TerminalNode ASSIGN() { return getToken(JustParser.ASSIGN, 0); }
+		public TerminalNode ASSIGN() { return getToken(RuvaParser.ASSIGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -7079,7 +7079,7 @@ public class JustParser extends Parser {
 		public VariableDeclaratorIdContext variableDeclaratorId() {
 			return getRuleContext(VariableDeclaratorIdContext.class,0);
 		}
-		public TerminalNode VAR() { return getToken(JustParser.VAR, 0); }
+		public TerminalNode VAR() { return getToken(RuvaParser.VAR, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -7095,11 +7095,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_resource; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterResource(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterResource(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitResource(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitResource(this);
 		}
 	}
 
@@ -7195,11 +7195,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_switchBlockStatementGroup; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterSwitchBlockStatementGroup(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterSwitchBlockStatementGroup(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitSwitchBlockStatementGroup(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitSwitchBlockStatementGroup(this);
 		}
 	}
 
@@ -7255,30 +7255,30 @@ public class JustParser extends Parser {
 		public ExpressionContext constantExpression;
 		public Token enumConstantName;
 		public IdentifierContext varName;
-		public TerminalNode CASE() { return getToken(JustParser.CASE, 0); }
-		public TerminalNode COLON() { return getToken(JustParser.COLON, 0); }
+		public TerminalNode CASE() { return getToken(RuvaParser.CASE, 0); }
+		public TerminalNode COLON() { return getToken(RuvaParser.COLON, 0); }
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode IDENTIFIER() { return getToken(JustParser.IDENTIFIER, 0); }
+		public TerminalNode IDENTIFIER() { return getToken(RuvaParser.IDENTIFIER, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode DEFAULT() { return getToken(JustParser.DEFAULT, 0); }
+		public TerminalNode DEFAULT() { return getToken(RuvaParser.DEFAULT, 0); }
 		public SwitchLabelContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_switchLabel; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterSwitchLabel(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterSwitchLabel(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitSwitchLabel(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitSwitchLabel(this);
 		}
 	}
 
@@ -7351,9 +7351,9 @@ public class JustParser extends Parser {
 		public EnhancedForControlContext enhancedForControl() {
 			return getRuleContext(EnhancedForControlContext.class,0);
 		}
-		public List<TerminalNode> SEMI() { return getTokens(JustParser.SEMI); }
+		public List<TerminalNode> SEMI() { return getTokens(RuvaParser.SEMI); }
 		public TerminalNode SEMI(int i) {
-			return getToken(JustParser.SEMI, i);
+			return getToken(RuvaParser.SEMI, i);
 		}
 		public ForInitContext forInit() {
 			return getRuleContext(ForInitContext.class,0);
@@ -7370,11 +7370,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_forControl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterForControl(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterForControl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitForControl(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitForControl(this);
 		}
 	}
 
@@ -7458,11 +7458,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_forInit; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterForInit(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterForInit(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitForInit(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitForInit(this);
 		}
 	}
 
@@ -7504,14 +7504,14 @@ public class JustParser extends Parser {
 		public VariableDeclaratorIdContext variableDeclaratorId() {
 			return getRuleContext(VariableDeclaratorIdContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(JustParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(RuvaParser.COLON, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
-		public TerminalNode VAR() { return getToken(JustParser.VAR, 0); }
+		public TerminalNode VAR() { return getToken(RuvaParser.VAR, 0); }
 		public List<VariableModifierContext> variableModifier() {
 			return getRuleContexts(VariableModifierContext.class);
 		}
@@ -7524,11 +7524,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_enhancedForControl; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterEnhancedForControl(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterEnhancedForControl(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitEnhancedForControl(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitEnhancedForControl(this);
 		}
 	}
 
@@ -7591,22 +7591,22 @@ public class JustParser extends Parser {
 	}
 
 	public static class ParExpressionContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
 		public ParExpressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_parExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterParExpression(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterParExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitParExpression(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitParExpression(this);
 		}
 	}
 
@@ -7642,9 +7642,9 @@ public class JustParser extends Parser {
 		public ExpressionContext expression(int i) {
 			return getRuleContext(ExpressionContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public ExpressionListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -7652,11 +7652,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_expressionList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterExpressionList(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterExpressionList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitExpressionList(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitExpressionList(this);
 		}
 	}
 
@@ -7702,25 +7702,25 @@ public class JustParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
-		public TerminalNode BANG() { return getToken(JustParser.BANG, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
+		public TerminalNode BANG() { return getToken(RuvaParser.BANG, 0); }
 		public ExpressionListContext expressionList() {
 			return getRuleContext(ExpressionListContext.class,0);
 		}
-		public TerminalNode THIS() { return getToken(JustParser.THIS, 0); }
-		public TerminalNode SUPER() { return getToken(JustParser.SUPER, 0); }
+		public TerminalNode THIS() { return getToken(RuvaParser.THIS, 0); }
+		public TerminalNode SUPER() { return getToken(RuvaParser.SUPER, 0); }
 		public MethodCallContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_methodCall; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterMethodCall(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterMethodCall(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitMethodCall(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitMethodCall(this);
 		}
 	}
 
@@ -7844,18 +7844,18 @@ public class JustParser extends Parser {
 		public MethodCallContext methodCall() {
 			return getRuleContext(MethodCallContext.class,0);
 		}
-		public TerminalNode NEW() { return getToken(JustParser.NEW, 0); }
+		public TerminalNode NEW() { return getToken(RuvaParser.NEW, 0); }
 		public CreatorContext creator() {
 			return getRuleContext(CreatorContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
 		public List<TypeTypeContext> typeType() {
 			return getRuleContexts(TypeTypeContext.class);
 		}
 		public TypeTypeContext typeType(int i) {
 			return getRuleContext(TypeTypeContext.class,i);
 		}
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
 		public List<ExpressionContext> expression() {
 			return getRuleContexts(ExpressionContext.class);
 		}
@@ -7868,23 +7868,23 @@ public class JustParser extends Parser {
 		public AnnotationContext annotation(int i) {
 			return getRuleContext(AnnotationContext.class,i);
 		}
-		public List<TerminalNode> BITAND() { return getTokens(JustParser.BITAND); }
+		public List<TerminalNode> BITAND() { return getTokens(RuvaParser.BITAND); }
 		public TerminalNode BITAND(int i) {
-			return getToken(JustParser.BITAND, i);
+			return getToken(RuvaParser.BITAND, i);
 		}
-		public TerminalNode ADD() { return getToken(JustParser.ADD, 0); }
-		public TerminalNode SUB() { return getToken(JustParser.SUB, 0); }
-		public TerminalNode INC() { return getToken(JustParser.INC, 0); }
-		public TerminalNode DEC() { return getToken(JustParser.DEC, 0); }
-		public TerminalNode TILDE() { return getToken(JustParser.TILDE, 0); }
-		public TerminalNode BANG() { return getToken(JustParser.BANG, 0); }
+		public TerminalNode ADD() { return getToken(RuvaParser.ADD, 0); }
+		public TerminalNode SUB() { return getToken(RuvaParser.SUB, 0); }
+		public TerminalNode INC() { return getToken(RuvaParser.INC, 0); }
+		public TerminalNode DEC() { return getToken(RuvaParser.DEC, 0); }
+		public TerminalNode TILDE() { return getToken(RuvaParser.TILDE, 0); }
+		public TerminalNode BANG() { return getToken(RuvaParser.BANG, 0); }
 		public LambdaExpressionContext lambdaExpression() {
 			return getRuleContext(LambdaExpressionContext.class,0);
 		}
 		public SwitchExpressionContext switchExpression() {
 			return getRuleContext(SwitchExpressionContext.class,0);
 		}
-		public TerminalNode COLONCOLON() { return getToken(JustParser.COLONCOLON, 0); }
+		public TerminalNode COLONCOLON() { return getToken(RuvaParser.COLONCOLON, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -7894,45 +7894,45 @@ public class JustParser extends Parser {
 		public ClassTypeContext classType() {
 			return getRuleContext(ClassTypeContext.class,0);
 		}
-		public TerminalNode MUL() { return getToken(JustParser.MUL, 0); }
-		public TerminalNode DIV() { return getToken(JustParser.DIV, 0); }
-		public TerminalNode MOD() { return getToken(JustParser.MOD, 0); }
-		public List<TerminalNode> LT() { return getTokens(JustParser.LT); }
+		public TerminalNode MUL() { return getToken(RuvaParser.MUL, 0); }
+		public TerminalNode DIV() { return getToken(RuvaParser.DIV, 0); }
+		public TerminalNode MOD() { return getToken(RuvaParser.MOD, 0); }
+		public List<TerminalNode> LT() { return getTokens(RuvaParser.LT); }
 		public TerminalNode LT(int i) {
-			return getToken(JustParser.LT, i);
+			return getToken(RuvaParser.LT, i);
 		}
-		public List<TerminalNode> GT() { return getTokens(JustParser.GT); }
+		public List<TerminalNode> GT() { return getTokens(RuvaParser.GT); }
 		public TerminalNode GT(int i) {
-			return getToken(JustParser.GT, i);
+			return getToken(RuvaParser.GT, i);
 		}
-		public TerminalNode LE() { return getToken(JustParser.LE, 0); }
-		public TerminalNode GE() { return getToken(JustParser.GE, 0); }
-		public TerminalNode EQUAL() { return getToken(JustParser.EQUAL, 0); }
-		public TerminalNode NOTEQUAL() { return getToken(JustParser.NOTEQUAL, 0); }
-		public TerminalNode CARET() { return getToken(JustParser.CARET, 0); }
-		public TerminalNode BITOR() { return getToken(JustParser.BITOR, 0); }
-		public TerminalNode AND() { return getToken(JustParser.AND, 0); }
-		public TerminalNode OR() { return getToken(JustParser.OR, 0); }
-		public TerminalNode COLON() { return getToken(JustParser.COLON, 0); }
-		public TerminalNode QUESTION() { return getToken(JustParser.QUESTION, 0); }
-		public TerminalNode ASSIGN() { return getToken(JustParser.ASSIGN, 0); }
-		public TerminalNode ADD_ASSIGN() { return getToken(JustParser.ADD_ASSIGN, 0); }
-		public TerminalNode SUB_ASSIGN() { return getToken(JustParser.SUB_ASSIGN, 0); }
-		public TerminalNode MUL_ASSIGN() { return getToken(JustParser.MUL_ASSIGN, 0); }
-		public TerminalNode DIV_ASSIGN() { return getToken(JustParser.DIV_ASSIGN, 0); }
-		public TerminalNode AND_ASSIGN() { return getToken(JustParser.AND_ASSIGN, 0); }
-		public TerminalNode OR_ASSIGN() { return getToken(JustParser.OR_ASSIGN, 0); }
-		public TerminalNode XOR_ASSIGN() { return getToken(JustParser.XOR_ASSIGN, 0); }
-		public TerminalNode RSHIFT_ASSIGN() { return getToken(JustParser.RSHIFT_ASSIGN, 0); }
-		public TerminalNode URSHIFT_ASSIGN() { return getToken(JustParser.URSHIFT_ASSIGN, 0); }
-		public TerminalNode LSHIFT_ASSIGN() { return getToken(JustParser.LSHIFT_ASSIGN, 0); }
-		public TerminalNode MOD_ASSIGN() { return getToken(JustParser.MOD_ASSIGN, 0); }
-		public TerminalNode DOT() { return getToken(JustParser.DOT, 0); }
-		public TerminalNode THIS() { return getToken(JustParser.THIS, 0); }
+		public TerminalNode LE() { return getToken(RuvaParser.LE, 0); }
+		public TerminalNode GE() { return getToken(RuvaParser.GE, 0); }
+		public TerminalNode EQUAL() { return getToken(RuvaParser.EQUAL, 0); }
+		public TerminalNode NOTEQUAL() { return getToken(RuvaParser.NOTEQUAL, 0); }
+		public TerminalNode CARET() { return getToken(RuvaParser.CARET, 0); }
+		public TerminalNode BITOR() { return getToken(RuvaParser.BITOR, 0); }
+		public TerminalNode AND() { return getToken(RuvaParser.AND, 0); }
+		public TerminalNode OR() { return getToken(RuvaParser.OR, 0); }
+		public TerminalNode COLON() { return getToken(RuvaParser.COLON, 0); }
+		public TerminalNode QUESTION() { return getToken(RuvaParser.QUESTION, 0); }
+		public TerminalNode ASSIGN() { return getToken(RuvaParser.ASSIGN, 0); }
+		public TerminalNode ADD_ASSIGN() { return getToken(RuvaParser.ADD_ASSIGN, 0); }
+		public TerminalNode SUB_ASSIGN() { return getToken(RuvaParser.SUB_ASSIGN, 0); }
+		public TerminalNode MUL_ASSIGN() { return getToken(RuvaParser.MUL_ASSIGN, 0); }
+		public TerminalNode DIV_ASSIGN() { return getToken(RuvaParser.DIV_ASSIGN, 0); }
+		public TerminalNode AND_ASSIGN() { return getToken(RuvaParser.AND_ASSIGN, 0); }
+		public TerminalNode OR_ASSIGN() { return getToken(RuvaParser.OR_ASSIGN, 0); }
+		public TerminalNode XOR_ASSIGN() { return getToken(RuvaParser.XOR_ASSIGN, 0); }
+		public TerminalNode RSHIFT_ASSIGN() { return getToken(RuvaParser.RSHIFT_ASSIGN, 0); }
+		public TerminalNode URSHIFT_ASSIGN() { return getToken(RuvaParser.URSHIFT_ASSIGN, 0); }
+		public TerminalNode LSHIFT_ASSIGN() { return getToken(RuvaParser.LSHIFT_ASSIGN, 0); }
+		public TerminalNode MOD_ASSIGN() { return getToken(RuvaParser.MOD_ASSIGN, 0); }
+		public TerminalNode DOT() { return getToken(RuvaParser.DOT, 0); }
+		public TerminalNode THIS() { return getToken(RuvaParser.THIS, 0); }
 		public InnerCreatorContext innerCreator() {
 			return getRuleContext(InnerCreatorContext.class,0);
 		}
-		public TerminalNode SUPER() { return getToken(JustParser.SUPER, 0); }
+		public TerminalNode SUPER() { return getToken(RuvaParser.SUPER, 0); }
 		public SuperSuffixContext superSuffix() {
 			return getRuleContext(SuperSuffixContext.class,0);
 		}
@@ -7942,9 +7942,9 @@ public class JustParser extends Parser {
 		public NonWildcardTypeArgumentsContext nonWildcardTypeArguments() {
 			return getRuleContext(NonWildcardTypeArgumentsContext.class,0);
 		}
-		public TerminalNode LBRACK() { return getToken(JustParser.LBRACK, 0); }
-		public TerminalNode RBRACK() { return getToken(JustParser.RBRACK, 0); }
-		public TerminalNode INSTANCEOF() { return getToken(JustParser.INSTANCEOF, 0); }
+		public TerminalNode LBRACK() { return getToken(RuvaParser.LBRACK, 0); }
+		public TerminalNode RBRACK() { return getToken(RuvaParser.RBRACK, 0); }
+		public TerminalNode INSTANCEOF() { return getToken(RuvaParser.INSTANCEOF, 0); }
 		public PatternContext pattern() {
 			return getRuleContext(PatternContext.class,0);
 		}
@@ -7954,11 +7954,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_expression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterExpression(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitExpression(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitExpression(this);
 		}
 	}
 
@@ -8586,11 +8586,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_pattern; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterPattern(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterPattern(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitPattern(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitPattern(this);
 		}
 	}
 
@@ -8654,7 +8654,7 @@ public class JustParser extends Parser {
 		public LambdaParametersContext lambdaParameters() {
 			return getRuleContext(LambdaParametersContext.class,0);
 		}
-		public TerminalNode ARROW() { return getToken(JustParser.ARROW, 0); }
+		public TerminalNode ARROW() { return getToken(RuvaParser.ARROW, 0); }
 		public LambdaBodyContext lambdaBody() {
 			return getRuleContext(LambdaBodyContext.class,0);
 		}
@@ -8664,11 +8664,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_lambdaExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLambdaExpression(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterLambdaExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLambdaExpression(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitLambdaExpression(this);
 		}
 	}
 
@@ -8704,14 +8704,14 @@ public class JustParser extends Parser {
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
 		public FormalParameterListContext formalParameterList() {
 			return getRuleContext(FormalParameterListContext.class,0);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public LambdaLVTIListContext lambdaLVTIList() {
 			return getRuleContext(LambdaLVTIListContext.class,0);
@@ -8722,11 +8722,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_lambdaParameters; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLambdaParameters(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterLambdaParameters(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLambdaParameters(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitLambdaParameters(this);
 		}
 	}
 
@@ -8836,11 +8836,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_lambdaBody; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterLambdaBody(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterLambdaBody(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitLambdaBody(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitLambdaBody(this);
 		}
 	}
 
@@ -8929,13 +8929,13 @@ public class JustParser extends Parser {
 	}
 
 	public static class PrimaryContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
-		public TerminalNode THIS() { return getToken(JustParser.THIS, 0); }
-		public TerminalNode SUPER() { return getToken(JustParser.SUPER, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
+		public TerminalNode THIS() { return getToken(RuvaParser.THIS, 0); }
+		public TerminalNode SUPER() { return getToken(RuvaParser.SUPER, 0); }
 		public LiteralContext literal() {
 			return getRuleContext(LiteralContext.class,0);
 		}
@@ -8945,8 +8945,8 @@ public class JustParser extends Parser {
 		public TypeTypeOrVoidContext typeTypeOrVoid() {
 			return getRuleContext(TypeTypeOrVoidContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(JustParser.DOT, 0); }
-		public TerminalNode CLASS() { return getToken(JustParser.CLASS, 0); }
+		public TerminalNode DOT() { return getToken(RuvaParser.DOT, 0); }
+		public TerminalNode CLASS() { return getToken(RuvaParser.CLASS, 0); }
 		public NonWildcardTypeArgumentsContext nonWildcardTypeArguments() {
 			return getRuleContext(NonWildcardTypeArgumentsContext.class,0);
 		}
@@ -8962,11 +8962,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_primary; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterPrimary(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterPrimary(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitPrimary(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitPrimary(this);
 		}
 	}
 
@@ -9083,12 +9083,12 @@ public class JustParser extends Parser {
 	}
 
 	public static class SwitchExpressionContext extends ParserRuleContext {
-		public TerminalNode SWITCH() { return getToken(JustParser.SWITCH, 0); }
+		public TerminalNode SWITCH() { return getToken(RuvaParser.SWITCH, 0); }
 		public ParExpressionContext parExpression() {
 			return getRuleContext(ParExpressionContext.class,0);
 		}
-		public TerminalNode LBRACE() { return getToken(JustParser.LBRACE, 0); }
-		public TerminalNode RBRACE() { return getToken(JustParser.RBRACE, 0); }
+		public TerminalNode LBRACE() { return getToken(RuvaParser.LBRACE, 0); }
+		public TerminalNode RBRACE() { return getToken(RuvaParser.RBRACE, 0); }
 		public List<SwitchLabeledRuleContext> switchLabeledRule() {
 			return getRuleContexts(SwitchLabeledRuleContext.class);
 		}
@@ -9101,11 +9101,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_switchExpression; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterSwitchExpression(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterSwitchExpression(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitSwitchExpression(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitSwitchExpression(this);
 		}
 	}
 
@@ -9152,31 +9152,31 @@ public class JustParser extends Parser {
 	}
 
 	public static class SwitchLabeledRuleContext extends ParserRuleContext {
-		public TerminalNode CASE() { return getToken(JustParser.CASE, 0); }
+		public TerminalNode CASE() { return getToken(RuvaParser.CASE, 0); }
 		public SwitchRuleOutcomeContext switchRuleOutcome() {
 			return getRuleContext(SwitchRuleOutcomeContext.class,0);
 		}
-		public TerminalNode ARROW() { return getToken(JustParser.ARROW, 0); }
-		public TerminalNode COLON() { return getToken(JustParser.COLON, 0); }
+		public TerminalNode ARROW() { return getToken(RuvaParser.ARROW, 0); }
+		public TerminalNode COLON() { return getToken(RuvaParser.COLON, 0); }
 		public ExpressionListContext expressionList() {
 			return getRuleContext(ExpressionListContext.class,0);
 		}
-		public TerminalNode NULL_LITERAL() { return getToken(JustParser.NULL_LITERAL, 0); }
+		public TerminalNode NULL_LITERAL() { return getToken(RuvaParser.NULL_LITERAL, 0); }
 		public GuardedPatternContext guardedPattern() {
 			return getRuleContext(GuardedPatternContext.class,0);
 		}
-		public TerminalNode DEFAULT() { return getToken(JustParser.DEFAULT, 0); }
+		public TerminalNode DEFAULT() { return getToken(RuvaParser.DEFAULT, 0); }
 		public SwitchLabeledRuleContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_switchLabeledRule; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterSwitchLabeledRule(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterSwitchLabeledRule(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitSwitchLabeledRule(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitSwitchLabeledRule(this);
 		}
 	}
 
@@ -9264,11 +9264,11 @@ public class JustParser extends Parser {
 	}
 
 	public static class GuardedPatternContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
 		public GuardedPatternContext guardedPattern() {
 			return getRuleContext(GuardedPatternContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
 		public TypeTypeContext typeType() {
 			return getRuleContext(TypeTypeContext.class,0);
 		}
@@ -9287,9 +9287,9 @@ public class JustParser extends Parser {
 		public AnnotationContext annotation(int i) {
 			return getRuleContext(AnnotationContext.class,i);
 		}
-		public List<TerminalNode> AND() { return getTokens(JustParser.AND); }
+		public List<TerminalNode> AND() { return getTokens(RuvaParser.AND); }
 		public TerminalNode AND(int i) {
-			return getToken(JustParser.AND, i);
+			return getToken(RuvaParser.AND, i);
 		}
 		public List<ExpressionContext> expression() {
 			return getRuleContexts(ExpressionContext.class);
@@ -9303,11 +9303,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_guardedPattern; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterGuardedPattern(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterGuardedPattern(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitGuardedPattern(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitGuardedPattern(this);
 		}
 	}
 
@@ -9479,11 +9479,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_switchRuleOutcome; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterSwitchRuleOutcome(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterSwitchRuleOutcome(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitSwitchRuleOutcome(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitSwitchRuleOutcome(this);
 		}
 	}
 
@@ -9541,7 +9541,7 @@ public class JustParser extends Parser {
 		public ClassOrInterfaceTypeContext classOrInterfaceType() {
 			return getRuleContext(ClassOrInterfaceTypeContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(JustParser.DOT, 0); }
+		public TerminalNode DOT() { return getToken(RuvaParser.DOT, 0); }
 		public List<AnnotationContext> annotation() {
 			return getRuleContexts(AnnotationContext.class);
 		}
@@ -9557,11 +9557,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_classType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassType(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterClassType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassType(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitClassType(this);
 		}
 	}
 
@@ -9645,11 +9645,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_creator; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterCreator(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterCreator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitCreator(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitCreator(this);
 		}
 	}
 
@@ -9746,9 +9746,9 @@ public class JustParser extends Parser {
 		public TypeArgumentsOrDiamondContext typeArgumentsOrDiamond(int i) {
 			return getRuleContext(TypeArgumentsOrDiamondContext.class,i);
 		}
-		public List<TerminalNode> DOT() { return getTokens(JustParser.DOT); }
+		public List<TerminalNode> DOT() { return getTokens(RuvaParser.DOT); }
 		public TerminalNode DOT(int i) {
-			return getToken(JustParser.DOT, i);
+			return getToken(RuvaParser.DOT, i);
 		}
 		public PrimitiveTypeContext primitiveType() {
 			return getRuleContext(PrimitiveTypeContext.class,0);
@@ -9759,11 +9759,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_createdName; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterCreatedName(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterCreatedName(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitCreatedName(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitCreatedName(this);
 		}
 	}
 
@@ -9877,11 +9877,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_innerCreator; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterInnerCreator(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterInnerCreator(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitInnerCreator(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitInnerCreator(this);
 		}
 	}
 
@@ -9920,13 +9920,13 @@ public class JustParser extends Parser {
 	}
 
 	public static class ArrayCreatorRestContext extends ParserRuleContext {
-		public List<TerminalNode> LBRACK() { return getTokens(JustParser.LBRACK); }
+		public List<TerminalNode> LBRACK() { return getTokens(RuvaParser.LBRACK); }
 		public TerminalNode LBRACK(int i) {
-			return getToken(JustParser.LBRACK, i);
+			return getToken(RuvaParser.LBRACK, i);
 		}
-		public List<TerminalNode> RBRACK() { return getTokens(JustParser.RBRACK); }
+		public List<TerminalNode> RBRACK() { return getTokens(RuvaParser.RBRACK); }
 		public TerminalNode RBRACK(int i) {
-			return getToken(JustParser.RBRACK, i);
+			return getToken(RuvaParser.RBRACK, i);
 		}
 		public ArrayInitializerContext arrayInitializer() {
 			return getRuleContext(ArrayInitializerContext.class,0);
@@ -9943,11 +9943,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_arrayCreatorRest; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterArrayCreatorRest(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterArrayCreatorRest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitArrayCreatorRest(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitArrayCreatorRest(this);
 		}
 	}
 
@@ -10111,11 +10111,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_classCreatorRest; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterClassCreatorRest(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterClassCreatorRest(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitClassCreatorRest(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitClassCreatorRest(this);
 		}
 	}
 
@@ -10163,11 +10163,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_explicitGenericInvocation; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterExplicitGenericInvocation(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterExplicitGenericInvocation(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitExplicitGenericInvocation(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitExplicitGenericInvocation(this);
 		}
 	}
 
@@ -10195,8 +10195,8 @@ public class JustParser extends Parser {
 	}
 
 	public static class TypeArgumentsOrDiamondContext extends ParserRuleContext {
-		public TerminalNode LT() { return getToken(JustParser.LT, 0); }
-		public TerminalNode GT() { return getToken(JustParser.GT, 0); }
+		public TerminalNode LT() { return getToken(RuvaParser.LT, 0); }
+		public TerminalNode GT() { return getToken(RuvaParser.GT, 0); }
 		public TypeArgumentsContext typeArguments() {
 			return getRuleContext(TypeArgumentsContext.class,0);
 		}
@@ -10206,11 +10206,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeArgumentsOrDiamond; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeArgumentsOrDiamond(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterTypeArgumentsOrDiamond(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeArgumentsOrDiamond(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitTypeArgumentsOrDiamond(this);
 		}
 	}
 
@@ -10251,8 +10251,8 @@ public class JustParser extends Parser {
 	}
 
 	public static class NonWildcardTypeArgumentsOrDiamondContext extends ParserRuleContext {
-		public TerminalNode LT() { return getToken(JustParser.LT, 0); }
-		public TerminalNode GT() { return getToken(JustParser.GT, 0); }
+		public TerminalNode LT() { return getToken(RuvaParser.LT, 0); }
+		public TerminalNode GT() { return getToken(RuvaParser.GT, 0); }
 		public NonWildcardTypeArgumentsContext nonWildcardTypeArguments() {
 			return getRuleContext(NonWildcardTypeArgumentsContext.class,0);
 		}
@@ -10262,11 +10262,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_nonWildcardTypeArgumentsOrDiamond; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterNonWildcardTypeArgumentsOrDiamond(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterNonWildcardTypeArgumentsOrDiamond(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitNonWildcardTypeArgumentsOrDiamond(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitNonWildcardTypeArgumentsOrDiamond(this);
 		}
 	}
 
@@ -10307,22 +10307,22 @@ public class JustParser extends Parser {
 	}
 
 	public static class NonWildcardTypeArgumentsContext extends ParserRuleContext {
-		public TerminalNode LT() { return getToken(JustParser.LT, 0); }
+		public TerminalNode LT() { return getToken(RuvaParser.LT, 0); }
 		public TypeListContext typeList() {
 			return getRuleContext(TypeListContext.class,0);
 		}
-		public TerminalNode GT() { return getToken(JustParser.GT, 0); }
+		public TerminalNode GT() { return getToken(RuvaParser.GT, 0); }
 		public NonWildcardTypeArgumentsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_nonWildcardTypeArguments; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterNonWildcardTypeArguments(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterNonWildcardTypeArguments(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitNonWildcardTypeArguments(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitNonWildcardTypeArguments(this);
 		}
 	}
 
@@ -10358,9 +10358,9 @@ public class JustParser extends Parser {
 		public TypeTypeContext typeType(int i) {
 			return getRuleContext(TypeTypeContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public TypeListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -10368,11 +10368,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeList; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeList(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterTypeList(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeList(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitTypeList(this);
 		}
 	}
 
@@ -10421,20 +10421,20 @@ public class JustParser extends Parser {
 		public PrimitiveTypeContext primitiveType() {
 			return getRuleContext(PrimitiveTypeContext.class,0);
 		}
-		public TerminalNode BITAND() { return getToken(JustParser.BITAND, 0); }
+		public TerminalNode BITAND() { return getToken(RuvaParser.BITAND, 0); }
 		public List<AnnotationContext> annotation() {
 			return getRuleContexts(AnnotationContext.class);
 		}
 		public AnnotationContext annotation(int i) {
 			return getRuleContext(AnnotationContext.class,i);
 		}
-		public List<TerminalNode> LBRACK() { return getTokens(JustParser.LBRACK); }
+		public List<TerminalNode> LBRACK() { return getTokens(RuvaParser.LBRACK); }
 		public TerminalNode LBRACK(int i) {
-			return getToken(JustParser.LBRACK, i);
+			return getToken(RuvaParser.LBRACK, i);
 		}
-		public List<TerminalNode> RBRACK() { return getTokens(JustParser.RBRACK); }
+		public List<TerminalNode> RBRACK() { return getTokens(RuvaParser.RBRACK); }
 		public TerminalNode RBRACK(int i) {
-			return getToken(JustParser.RBRACK, i);
+			return getToken(RuvaParser.RBRACK, i);
 		}
 		public TypeTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -10442,11 +10442,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeType(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterTypeType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeType(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitTypeType(this);
 		}
 	}
 
@@ -10569,25 +10569,25 @@ public class JustParser extends Parser {
 	}
 
 	public static class PrimitiveTypeContext extends ParserRuleContext {
-		public TerminalNode BOOLEAN() { return getToken(JustParser.BOOLEAN, 0); }
-		public TerminalNode CHAR() { return getToken(JustParser.CHAR, 0); }
-		public TerminalNode BYTE() { return getToken(JustParser.BYTE, 0); }
-		public TerminalNode SHORT() { return getToken(JustParser.SHORT, 0); }
-		public TerminalNode INT() { return getToken(JustParser.INT, 0); }
-		public TerminalNode LONG() { return getToken(JustParser.LONG, 0); }
-		public TerminalNode FLOAT() { return getToken(JustParser.FLOAT, 0); }
-		public TerminalNode DOUBLE() { return getToken(JustParser.DOUBLE, 0); }
+		public TerminalNode BOOLEAN() { return getToken(RuvaParser.BOOLEAN, 0); }
+		public TerminalNode CHAR() { return getToken(RuvaParser.CHAR, 0); }
+		public TerminalNode BYTE() { return getToken(RuvaParser.BYTE, 0); }
+		public TerminalNode SHORT() { return getToken(RuvaParser.SHORT, 0); }
+		public TerminalNode INT() { return getToken(RuvaParser.INT, 0); }
+		public TerminalNode LONG() { return getToken(RuvaParser.LONG, 0); }
+		public TerminalNode FLOAT() { return getToken(RuvaParser.FLOAT, 0); }
+		public TerminalNode DOUBLE() { return getToken(RuvaParser.DOUBLE, 0); }
 		public PrimitiveTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_primitiveType; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterPrimitiveType(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterPrimitiveType(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitPrimitiveType(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitPrimitiveType(this);
 		}
 	}
 
@@ -10622,17 +10622,17 @@ public class JustParser extends Parser {
 	}
 
 	public static class TypeArgumentsContext extends ParserRuleContext {
-		public TerminalNode LT() { return getToken(JustParser.LT, 0); }
+		public TerminalNode LT() { return getToken(RuvaParser.LT, 0); }
 		public List<TypeArgumentContext> typeArgument() {
 			return getRuleContexts(TypeArgumentContext.class);
 		}
 		public TypeArgumentContext typeArgument(int i) {
 			return getRuleContext(TypeArgumentContext.class,i);
 		}
-		public TerminalNode GT() { return getToken(JustParser.GT, 0); }
-		public List<TerminalNode> COMMA() { return getTokens(JustParser.COMMA); }
+		public TerminalNode GT() { return getToken(RuvaParser.GT, 0); }
+		public List<TerminalNode> COMMA() { return getTokens(RuvaParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(JustParser.COMMA, i);
+			return getToken(RuvaParser.COMMA, i);
 		}
 		public TypeArgumentsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -10640,11 +10640,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_typeArguments; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterTypeArguments(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterTypeArguments(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitTypeArguments(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitTypeArguments(this);
 		}
 	}
 
@@ -10694,7 +10694,7 @@ public class JustParser extends Parser {
 		public ArgumentsContext arguments() {
 			return getRuleContext(ArgumentsContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(JustParser.DOT, 0); }
+		public TerminalNode DOT() { return getToken(RuvaParser.DOT, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -10707,11 +10707,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_superSuffix; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterSuperSuffix(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterSuperSuffix(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitSuperSuffix(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitSuperSuffix(this);
 		}
 	}
 
@@ -10775,7 +10775,7 @@ public class JustParser extends Parser {
 	}
 
 	public static class ExplicitGenericInvocationSuffixContext extends ParserRuleContext {
-		public TerminalNode SUPER() { return getToken(JustParser.SUPER, 0); }
+		public TerminalNode SUPER() { return getToken(RuvaParser.SUPER, 0); }
 		public SuperSuffixContext superSuffix() {
 			return getRuleContext(SuperSuffixContext.class,0);
 		}
@@ -10791,11 +10791,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_explicitGenericInvocationSuffix; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterExplicitGenericInvocationSuffix(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterExplicitGenericInvocationSuffix(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitExplicitGenericInvocationSuffix(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitExplicitGenericInvocationSuffix(this);
 		}
 	}
 
@@ -10854,8 +10854,8 @@ public class JustParser extends Parser {
 	}
 
 	public static class ArgumentsContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(JustParser.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(JustParser.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(RuvaParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(RuvaParser.RPAREN, 0); }
 		public ExpressionListContext expressionList() {
 			return getRuleContext(ExpressionListContext.class,0);
 		}
@@ -10865,11 +10865,11 @@ public class JustParser extends Parser {
 		@Override public int getRuleIndex() { return RULE_arguments; }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).enterArguments(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).enterArguments(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof JustParserListener ) ((JustParserListener)listener).exitArguments(this);
+			if ( listener instanceof RuvaParserListener ) ((RuvaParserListener)listener).exitArguments(this);
 		}
 	}
 

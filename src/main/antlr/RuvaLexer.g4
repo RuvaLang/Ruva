@@ -1,7 +1,7 @@
-lexer grammar JustLexer;
+lexer grammar RuvaLexer;
 
 @header {
-package me.hydos.antlr;
+package me.hydos.ruva.antlr;
 }
 
 // Keywords

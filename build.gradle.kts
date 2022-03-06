@@ -14,14 +14,14 @@ repositories {
 
 dependencies {
     antlr("org.antlr:antlr4:4.9.3")
-    implementation("org.antlr:antlr4-runtime:4.9.3")
+    compileOnly("org.antlr:antlr4-runtime:4.9.3")
 }
 
 tasks.generateGrammarSource {
     maxHeapSize = "64m"
     source = sourceSets["main"].antlr
 
-    outputDirectory = file("src/main/java/me/hydos/antlr")
+    outputDirectory = file("src/main/java/me/hydos/ruva/antlr")
 }
 
 tasks.clean {

@@ -1,10 +1,10 @@
-parser grammar JustParser;
+parser grammar RuvaParser;
 
 @header {
- package me.hydos.antlr;
+ package me.hydos.ruva.antlr;
 }
 
-options { tokenVocab=JustLexer; }
+options { tokenVocab=RuvaLexer; }
 
 compilationUnit
     : packageDeclaration? importDeclaration* typeDeclaration* classBodyDeclaration*

@@ -1,34 +1,38 @@
 package me.hydos.ruva;
 
-import me.hydos.antlr.JustLexer;
-import me.hydos.antlr.JustParser;
+import me.hydos.ruva.antlr.RuvaLexer;
+import me.hydos.ruva.antlr.RuvaParser;
+import me.hydos.ruva.visitor.AntlrTreeReaderVisitor;
 import org.antlr.v4.runtime.CharStream;
+import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
-import org.antlr.v4.runtime.tree.RuleNode;
+
+import java.io.IOException;
+import java.nio.file.Path;
 
 public class Ruva {
 
-    public static RustFile convertFile(CharStream file) {
-        JustParser parser = new JustParser(new CommonTokenStream(new JustLexer(file)));
-        JustParser.CompilationUnitContext compilationUnitContext = parser.compilationUnit();
+    /**
+     * Converts a Ruva source file into a Rust source file.
+     *
+     * @param file the path to the file you would like to convert
+     * @return rust version of the Ruva source
+     */
+    public static String convertFile(Path file) {
+        CharStream stream = asStream(file);
+        RuvaParser parser = new RuvaParser(new CommonTokenStream(new RuvaLexer(stream)));
+        AntlrTreeReaderVisitor visitor = new AntlrTreeReaderVisitor();
+        parser.compilationUnit().accept(visitor);
 
-        RuvaVisitor visitor = new RuvaVisitor(file.getSourceName().replace(".jrs", ".rs"));
-        compilationUnitContext.accept(new AbstractParseTreeVisitor<>() {
+        RuvaSourceFile sourceFile = visitor.file;
+        return "";
+    }
 
-            @Override
-            public Object visitChildren(RuleNode node) {
-                if(node instanceof JustParser.FieldDeclarationContext ctx) {
-                    visitor.visitFieldDeclaration(ctx);
-                }
-
-                if(node instanceof JustParser.MethodDeclarationContext ctx) {
-                    visitor.visitMethodDeclaration(ctx);
-                }
-
-                return super.visitChildren(node);
-            }
-        });
-        return visitor.rustFile;
+    private static CharStream asStream(Path file) {
+        try {
+            return CharStreams.fromPath(file);
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to get CharStream from path. ", e);
+        }
     }
 }
