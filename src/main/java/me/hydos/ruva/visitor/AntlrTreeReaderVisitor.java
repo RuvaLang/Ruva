@@ -2,6 +2,7 @@ package me.hydos.ruva.visitor;
 
 import me.hydos.ruva.RuvaSourceFile;
 import me.hydos.ruva.antlr.RuvaParser;
+import me.hydos.ruva.type.Type;
 
 public class AntlrTreeReaderVisitor extends AntlrBaseVisitor {
 
@@ -17,7 +18,9 @@ public class AntlrTreeReaderVisitor extends AntlrBaseVisitor {
 
     @Override
     protected void visitMethodDeclaration(RuvaParser.MethodDeclarationContext ctx) {
+        String functionName = getName(ctx.identifier());
+        Type returnType = getType(ctx.typeTypeOrVoid());
 
-        System.out.println(getType(ctx.typeTypeOrVoid()));
+        System.out.println(returnType);
     }
 }
