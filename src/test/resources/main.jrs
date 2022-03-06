@@ -1,16 +1,13 @@
-package me.hydos.test;
-
-public final u64 RANDOM_CONSTANT = 34548945;
+package me.hydos.ruvaExample;
 
 public void main() {
-    // Very cool comment
-    print!("Hello, Rust. Your syntax is now fixed :)\n");
+        print!("Hello World! 2\n");
 
-    u32 aInt = 32;
-    var anotherInt = 32;
-    print!("32 + 32 = {}", aInt + anotherInt);
-}
+        u32 coolInt = 454354353;
 
-public u64 imConcerned(&str bruh) {
-    return 123456;
+        print!("The number {} is quite great, No?\n", coolInt);
+
+        &str waterpickerString2 = String.from("This is so fucking cursed").as_str();
+
+        print!("This is so fucking cursed");
 }

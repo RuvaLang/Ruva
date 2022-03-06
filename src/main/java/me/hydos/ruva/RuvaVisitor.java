@@ -1,6 +1,7 @@
 package me.hydos.ruva;
 
 import me.hydos.antlr.JustParser;
+import me.hydos.ruva.expressions.*;
 import me.hydos.ruva.type.Constant;
 import me.hydos.ruva.type.Function;
 import me.hydos.ruva.type.MethodArg;
@@ -77,29 +78,44 @@ public class RuvaVisitor {
 
     private LocalVariableDeclarationStatement readLocalVariableDeclaration(JustParser.LocalVariableDeclarationContext localVarDecl) {
         JustParser.VariableDeclaratorContext variableDeclaratorContext = localVarDecl.variableDeclarators().variableDeclarator().get(0);
-        TerminalNode rawType = localVarDecl.typeType().classOrInterfaceType().identifier().get(0).IDENTIFIER();
+        JustParser.TypeTypeContext rawType = localVarDecl.typeType(); // Going any deeper removes `&` char from type.
         String localType = null;
 
         if (rawType != null) {
             localType = get(rawType);
         }
         String localName = get(variableDeclaratorContext.variableDeclaratorId().identifier().IDENTIFIER());
-        String localDefaultValue = get(variableDeclaratorContext.variableInitializer().expression().primary().literal());
 
-        return new LocalVariableDeclarationStatement(localType, localName, localDefaultValue);
+        Expression value = null;
+        JustParser.ExpressionContext expression = variableDeclaratorContext.variableInitializer().expression();
+
+        if (expression.NEW() != null) {
+            // FIXME: oh god
+/*            value = new StringBuilder("String::new(");
+            List<JustParser.ExpressionContext> arguments = expression.creator().classCreatorRest().arguments().expressionList().expression();
+            for (JustParser.ExpressionContext argument : arguments) {
+                value.append(get(argument));
+
+                if (arguments.get(arguments.size() - 1) != argument) {
+                    value.append(", ");
+                }
+            }
+            value.append(")");*/
+        } else {
+            if (expression.primary() != null) {
+                value = new PrimitiveExpression(expression.primary());
+            } else if (expression.methodCall() != null) {
+                value = new MethodCallExpression(expression);
+            } else {
+                throw new RuntimeException("Unknown Expression.");
+            }
+        }
+
+        return new LocalVariableDeclarationStatement(localType, localName, value);
     }
 
     private InvokeMethodStatement readInvokeMethod(JustParser.StatementContext statement) {
-        JustParser.MethodCallContext methodCallContext = (JustParser.MethodCallContext) statement.children.get(0).getChild(0);
-        String invokingMethod = get(methodCallContext.identifier());
-        boolean isMacro = get(methodCallContext.BANG()).equals("!");
-
-        List<String> arguments = new ArrayList<>();
-        for (JustParser.ExpressionContext expressionContext : methodCallContext.expressionList().expression()) {
-            arguments.add(get(expressionContext));
-        }
-
-        return new InvokeMethodStatement(isMacro, invokingMethod, arguments);
+        return new InvokeMethodStatement(new MethodCallExpression((JustParser.ExpressionContext) statement.children.get(0)));
     }
 
     private List<MethodArg> getMethodArgs(JustParser.FormalParameterListContext paramList) {
@@ -121,7 +137,7 @@ public class RuvaVisitor {
         return args;
     }
 
-    private String get(ParseTree parseTree) {
+    public static String get(ParseTree parseTree) {
         if (parseTree instanceof TerminalNode terminalNode) {
             return terminalNode.toString();
         } else {

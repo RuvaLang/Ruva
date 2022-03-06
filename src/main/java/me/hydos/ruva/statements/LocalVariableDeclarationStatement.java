@@ -1,6 +1,8 @@
 package me.hydos.ruva.statements;
 
-public record LocalVariableDeclarationStatement(String type, String name, String defaultValue) implements Statement {
+import me.hydos.ruva.expressions.Expression;
+
+public record LocalVariableDeclarationStatement(String type, String name, Expression defaultValue) implements Statement {
 
     @Override
     public void write(StringBuilder writer) {
@@ -8,6 +10,6 @@ public record LocalVariableDeclarationStatement(String type, String name, String
         if (type != null) {
             writer.append(": ").append(type);
         }
-        writer.append(" = ").append(defaultValue).append(";\n");
+        writer.append(" = ").append(defaultValue.write()).append(";\n");
     }
 }

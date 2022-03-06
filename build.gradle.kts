@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "me.hydos"
-version = "1.0-SNAPSHOT"
+version = "0.1.0"
 
 repositories {
     mavenCentral()
@@ -32,7 +32,7 @@ tasks.clean {
 
 tasks.shadowJar {
     manifest {
-        attributes(mapOf("Main-Class" to "me.hydos.just.ProjectConverter"))
+        attributes(mapOf("Main-Class" to "me.hydos.ruva.ProjectConverter"))
     }
 }
 
