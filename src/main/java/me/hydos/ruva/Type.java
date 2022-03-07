@@ -40,6 +40,19 @@ public record Type(Primitive primitive, int byteCount, boolean isReference) {
         };
     }
 
+    @Override
+    public String toString() {
+        String primitiveName = switch (this.primitive) {
+            case INT -> "i" + this.byteCount;
+            case UNSIGNED_INT -> "u" + this.byteCount;
+            case FLOAT -> "f" + this.byteCount;
+            case STR -> "str";
+            case BOOL -> "bool";
+        };
+
+        return this.isReference ? "&" + primitiveName : primitiveName;
+    }
+
     public enum Primitive {
         BOOL(),
         STR(),

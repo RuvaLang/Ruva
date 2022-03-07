@@ -1,6 +1,6 @@
 package me.hydos.ruva.expressions;
 
-import me.hydos.ruva.AntlrBaseVisitor;
+import me.hydos.ruva.visitor.AntlrBaseVisitor;
 import me.hydos.ruva.antlr.RuvaParser;
 
 /**

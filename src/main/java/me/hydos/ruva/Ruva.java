@@ -3,6 +3,7 @@ package me.hydos.ruva;
 import me.hydos.ruva.antlr.RuvaLexer;
 import me.hydos.ruva.antlr.RuvaParser;
 import me.hydos.ruva.visitor.AntlrTreeReaderVisitor;
+import me.hydos.ruva.writer.RustSourceWriter;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -25,7 +26,7 @@ public class Ruva {
         parser.compilationUnit().accept(visitor);
 
         RuvaSourceFile sourceFile = visitor.file;
-        return "";
+        return RustSourceWriter.writeFile(sourceFile);
     }
 
     private static CharStream asStream(Path file) {

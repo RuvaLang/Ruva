@@ -1,10 +1,11 @@
-package me.hydos.ruva;
+package me.hydos.ruva.visitor;
 
+import me.hydos.ruva.MethodParameter;
+import me.hydos.ruva.Type;
 import me.hydos.ruva.antlr.RuvaParser;
 import me.hydos.ruva.expressions.Expression;
 import me.hydos.ruva.statements.Statement;
 import me.hydos.ruva.statements.VariableDeclaration;
-import me.hydos.ruva.visitor.Visibility;
 import org.antlr.v4.runtime.tree.*;
 
 import java.util.ArrayList;

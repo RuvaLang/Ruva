@@ -1,6 +1,6 @@
 package me.hydos.ruva.visitor;
 
-import me.hydos.ruva.AntlrBaseVisitor;
+import me.hydos.ruva.Function;
 import me.hydos.ruva.MethodParameter;
 import me.hydos.ruva.RuvaSourceFile;
 import me.hydos.ruva.antlr.RuvaParser;
@@ -29,6 +29,6 @@ public class AntlrTreeReaderVisitor extends AntlrBaseVisitor {
         List<MethodParameter> methodParameters = getParameters(ctx.formalParameters());
         List<Statement> statements = getStatements(ctx.methodBody().block());
 
-        System.out.println("ok");
+        this.file.functions.add(new Function(functionName, returnType, visibility, methodParameters, statements));
     }
 }
